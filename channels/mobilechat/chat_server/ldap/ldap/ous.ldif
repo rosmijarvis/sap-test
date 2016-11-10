@@ -1,0 +1,5 @@
+dn: ou=People,dc=lnt,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: People
+description: Dump all users here

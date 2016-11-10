@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Thales N/w app{% endblock %}</title>
+
+  {% block head %}
+  		<script src="./js/jquery-2.2.0.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+		<script src="./js/main.js"></script>
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<script src="./js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/default.css">
+
+		<script src="./js/bootstrap-datetimepicker.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap-combined.min.css" />
+  {% endblock %}
+
+</head>
+<body>
+	{% include "nav.html" %}
+
+	{% block content %}{% endblock %}
+	
+<!-- 	{% include "footer.html" %}	
+ --></body>
+</html>

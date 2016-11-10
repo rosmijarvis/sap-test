@@ -1,0 +1,17 @@
+
+
+To start the AI framework do the following steps
+
+1. Insert record of bot configuration into Mongo DB
+2. Go to properties.js in config folder and enter the correct bot name
+
+bot-name=<bot_name>
+
+3. Go to command promt and type command
+
+node ai-studio.js <bot_name>
+
+OR
+
+forever start ai-studio.js <bot_name>
+

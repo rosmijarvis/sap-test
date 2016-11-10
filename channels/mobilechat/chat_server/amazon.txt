@@ -1,0 +1,89 @@
+/ lnt
+download .pem file.
+move it to ~/.ssh directory
+add permissions to .pem file
+chmod 400 ~/.ssh/nodeinredhat.pem 
+now try to connect it
+ssh -i ~/.ssh/nodeinredhat.pem ec2-user@ec2-52-27-0-146.us-west-2.compute.amazonaws.com;
+
+ssh -i "manasa.pem" ec2-user@ec2-52-36-45-212.us-west-2.compute.amazonaws.com
+
+truncate message; truncate message_status; truncate group_table; truncate group_user_table; truncate group_offline;
+
+node nodeapplications/thales-chat-server/app.js
+
+
+to kill all node instances in LINUX
+
+ps aux | grep node
+
+ps aux | grep slapd
+-->killall node
+
+->screen
+
+
+forever - whcie
+
+Connection closed with error
+java.lang.IllegalArgumentException: WRONG_ATTR is not a constant in org.jivesoftware.smack.packet.XMPPError$Type
+at java.lang.Enum.valueOf(Enum.java:200)
+
+
+thales@123
+/home/ec2-user/nodeapplications/thales-chat-server/openldap-2.4.26/db-4.7.25/build_unix/openldap-2.4.26
+
+/home/ec2-user/nodeapplications/thales-chat-server/openldap-2.4.26/db-4.7.25/build_unix/openldap-2.4.26/servers/slapd/back-sql/rdbms_depend/mysql
+
+unixODBC-devel.i686 : Development files for programs which will use the unixODBC library
+unixODBC-devel.x86_64 : Development files for programs which will use the unixODBC library
+unixODBC.i686 : A complete ODBC driver manager for Linux
+unixODBC.x86_64 : A complete ODBC driver manager for Linux
+
+sudo vi /etc/odbcinst.ini
+
+sudo /usr/local/libexec/slapd -d 1
+
+sudo /usr/libexec/slapd -d 1
+
+/usr/local/etc/openldap
+
+ldapadd -H ldap://127.0.0.1 -x -D "cn=root,dc=lnt,dc=com" -f ous.ldif
+
+ldapadd -x -D "cn=root,dc=lnt,dc=com" -W -f user.ldif
+ldapsearch -x -b "dc=lnt,dc=com" -s sub "(objectClass=*)"
+9224904300
+cn=root,
+
+suffix          "dc=lnt,dc=com"
+rootdn          "cn=root,dc=lnt,dc=com"
+
+/usr/lib64/libmyodbc5.so
+libodbc.so
+libodbcpsqlS.so
+liboraodbcS.so
+
+libodbcpsqlS.so
+
+Driver          = /usr/lib/libmyodbc5.so
+Setup           = /usr/lib/libodbcmyS.so
+Driver64        = /usr/lib64/libmyodbc5.so
+Setup64         = /usr/lib64/libodbcmyS.so
+
+
+
+CREATE TABLE message
+(
+message_id varchar(100),
+stanza varchar(100),
+message_updated_dtime varchar(100),
+message_created_dtime varchar(100),
+to_user varchar(100),
+from_user varchar(100),
+is_delivered varchar(100),
+is_read varchar(100),
+message varchar(100),
+message_delivered_dtime varchar(100),
+message_read_dtime varchar(100),
+group_id varchar(100)
+)

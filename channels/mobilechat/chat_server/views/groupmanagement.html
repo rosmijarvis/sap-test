@@ -1,0 +1,121 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+   
+  	<div ng-app="usermgmt" ng-controller="userctrl" class="content col-xs-12" id="groupmgmnt_page">
+	    <div class="container" style="padding-top:40px;">
+			<div role="search">
+				<div class="form-group col-sm-12 col-md-4">
+					<input type="text" ng-model = "search" ng-keyup = "searchUsers($event,group)" class="form-control search-field" id = 'searchField' placeholder="Search by Group Name" />
+				</div>
+				<div class="delete-btn pull-right">
+				<form action = "/groupmanagement/deletegroup" method="post">
+					<input type = "hidden" name = "group_id" id = "delete_group_id" value = "" />
+					<button type="submit" class="btn btn-default" id= "delete_group">Delete</button>
+				</form>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="table-responsive">
+					<table class="table table-bordered table-hover group-table">
+					  <thead>
+					      <tr>
+					      	<th>Select</th>
+					      	<th>Group ID</th>
+					      	<th>Group Name</th>
+					        <th>Created Date</th>
+					        <th>Updated Date</th>
+					        <th>Created By</th>
+					      </tr>
+					    </thead>
+					    <tbody id = "angular" ng-show = "show">
+					    	{% raw %}
+					    	<tr ng-show = "zero">
+					    		<td colspan = "8"> Search has no results </td>
+					    	</tr>
+							<tr ng-repeat="result in results">
+								<td><label><input type="checkbox" name = "checkBox[]" class = "group_select" value = "{{ result.group_id }}"></label></td>
+								<td>{{ result.group_id }}</td>
+								<td>
+
+								    <a href="#">
+								    <div id = "{{ result.group_id }}" onclick = "openModalGroup(this.id)">{{ result.group_name }}</div>
+								    </a>
+								</td>
+						      	<td>{{ result.group_created_dtime }}</td>
+						      	<td>{{ result.group_updated_dtime }}</td>
+						      	<td>{{ result.created_by_user_id }}</td>
+					      	</tr>
+					      	{% endraw %}
+					    </tbody>
+					    <tbody ng-hide = "show" id = "swig">
+						    {% for result in results %}
+						    <tr>
+						      	<td><label><input type="checkbox" name = "checkBox[]" class = "group_select checkall" value = "{{ result.group_id }}"></label></td>
+						      	<td>{{ result.group_id }}</td>
+								<td>
+
+									<a href="#"><div id = "{{ result.group_id }}" onclick = "openModalGroup(this.id)">{{ result.group_name }}</div>
+									</a>
+								</td>	
+						      	<td>{{ result.group_created_dtime }}</td>
+						      	<td>{{ result.group_updated_dtime }}</td>
+						      	<td>{{ result.created_by_user_id }}</td>
+						    </tr>
+						    {% endfor %}
+					    </tbody>
+					  <tfoot>
+					  </tfoot>
+					</table>
+				</div>
+
+				<!--Modal popup starts-->
+				{% raw %}
+                <form  action = "/groupmanagement/changeAdmin" method="post">
+                    <div class="container">
+                        <modal title="Edit" visible="showModal">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>User ID</th>
+                                            <th>Name</th>
+                                            <th>Admin</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="group_user in group_users">
+                                            <td>{{group_user.user_id}}</td>
+                                            <td>{{group_user.first_name + ' ' + group_user.last_name}}</td>
+                                            <td><input type = "radio" name="new_admin_id" value = "{{group_user.jid}}" class = "group_select checkall" ng-checked = "group_user.jid == group_user.id_admin" />
+                                            </td>
+
+                                        </tr>
+                                    
+                                    </tbody>
+                                    <tfoot></tfoot>
+                                 </table>
+                            </div>
+                            <input type = "hidden" name = "group_id" id = "change_admin_id" value = "{{group_users[0].group_id}}" />
+                            <button type="submit" class="btn btn-default" id= "change_admin">Submit</button>
+                        </modal>
+                    </div>		
+                 </form>
+                 {% endraw %}
+                <!--Modalpopup ends-->
+
+				<div class="user-pagination">
+					<ul class="pagination pull-right">
+						<li><a href="?offset={{ pagination.prev }}">&laquo;</a></li>
+						{% for page in pagination.pages %}
+							<li><a href="?offset={{page*10}}">{{page+1}}</a></li>
+						{% endfor %}
+						<li><a href="?offset={{ pagination.next }}">&raquo;</a></li>
+					</ul>
+				</div>
+
+			</div>
+	    </div>
+    </div>
+{% endblock %}

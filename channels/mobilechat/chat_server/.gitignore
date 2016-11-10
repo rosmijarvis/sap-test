@@ -1,0 +1,4 @@
+*.DS_Store
+logs
+xmpp/.DS_Store
+openldap-2.4.26/*

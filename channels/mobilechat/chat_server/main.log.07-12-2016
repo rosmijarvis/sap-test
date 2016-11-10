@@ -1,0 +1,465 @@
+{"level":"info","message":"Deleting old logs","timestamp":"2016-07-12T04:00:00.632Z"}
+{"level":"info","message":"XMPP server connected","timestamp":"2016-07-12T07:21:49.168Z"}
+{"level":"info","message":"OTP code: 311387","timestamp":"2016-07-12T07:21:51.004Z"}
+{"level":"info","message":"sending mail to:: suraj.shinde@lntinfotech.com","timestamp":"2016-07-12T07:21:51.010Z"}
+{"level":"info","message":"update password err ::null","timestamp":"2016-07-12T07:22:38.691Z"}
+{"level":"info","message":"Server: t10612208 AUTHENTICATING....","timestamp":"2016-07-12T07:22:52.723Z"}
+{"level":"info","message":"UserName: t10612208","timestamp":"2016-07-12T07:22:52.723Z"}
+{"level":"info","message":"Password: 123580","timestamp":"2016-07-12T07:22:52.724Z"}
+{"level":"info","message":"Server: t10612208 Authentication success","timestamp":"2016-07-12T07:22:52.732Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T07:23:00.842Z"}
+{"level":"info","message":"<iq id=\"PwJDQ-16\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T07:23:00.842Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T07:23:00.842Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T07:23:00.856Z"}
+{"level":"info","message":"<iq id=\"PwJDQ-16\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T07:23:00.856Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T07:23:00.856Z"}
+{"level":"error","message":"There is no user with jid - t10612208@52.27.0.146","timestamp":"2016-07-12T07:23:01.422Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T07:23:01.423Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"PwJDQ-18\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><MessageHistoryIQ xmlns=\"urn:xmpp:getmessagehistory\"><action_type>quitapp</action_type></MessageHistoryIQ></iq>","timestamp":"2016-07-12T07:23:01.423Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T07:23:01.423Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T07:23:01.962Z"}
+{"level":"info","message":"<iq id=\"PwJDQ-20\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T07:23:01.962Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T07:23:01.962Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T07:23:01.976Z"}
+{"level":"info","message":"<iq id=\"PwJDQ-20\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T07:23:01.976Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T07:23:01.976Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T07:23:02.545Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"PwJDQ-30\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><MessageHistoryIQ xmlns=\"urn:xmpp:getmessagehistory\"><action_type>getOldMessages</action_type></MessageHistoryIQ></iq>","timestamp":"2016-07-12T07:23:02.546Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T07:23:02.546Z"}
+{"level":"info","message":"Message history - Sending All messages from server to:: t10612208@52.27.0.146","timestamp":"2016-07-12T07:23:02.546Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T07:23:03.934Z"}
+{"level":"info","message":"<iq id=\"h22xA-10\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T07:23:03.934Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T07:23:03.934Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T07:23:07.136Z"}
+{"level":"info","message":"<iq id=\"PwJDQ-30\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T07:23:07.136Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T07:23:07.136Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T07:23:07.428Z"}
+{"level":"info","message":"<iq id=\"PwJDQ-30\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T07:23:07.428Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T07:23:07.428Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T07:23:07.430Z"}
+{"level":"info","message":"<iq id=\"PwJDQ-30\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T07:23:07.431Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T07:23:07.431Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T07:23:07.603Z"}
+{"level":"info","message":"<iq id=\"PwJDQ-30\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T07:23:07.603Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T07:23:07.603Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T07:23:07.861Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"PwJDQ-196\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><sendgcmtokenIQ xmlns=\"urn:xmpp:SendGCMToken\"><gcmtoken>{\"GCMToken\":\"ciqiuhlGduY:APA91bEar9yu52SqiVo_o-qbP7qvkf_LkpvP9e8kcEZFduP6mNTzGUnAJUxmQ-IScvMCqDscRuZbXPudeRmnsGs4D0TIFUm5AkzH4p_rIUGGoKwaQgbgochk5sXTJdNNTW7e26vUF2io\"}</gcmtoken><action_type>SendGCMToken</action_type><response/></sendgcmtokenIQ></iq>","timestamp":"2016-07-12T07:23:07.861Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T07:23:07.861Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T07:23:08.273Z"}
+{"level":"info","message":"<iq id=\"PwJDQ-196\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T07:23:08.273Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T07:23:08.273Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T07:23:24.103Z"}
+{"level":"info","message":"<iq id=\"PwJDQ-199\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><MessageHistoryIQ xmlns=\"urn:xmpp:getmessagehistory\"><action_type>getMessagesByDate</action_type><from>2016-06-02</from><to>2016-07-02</to><jid_to>t10612208@52.27.0.146</jid_to><jid_from>t10609372@52.27.0.146</jid_from></MessageHistoryIQ></iq>","timestamp":"2016-07-12T07:23:24.103Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T07:23:24.103Z"}
+{"level":"info","message":"Message history - Load more triggered - by:: t10612208@52.27.0.146","timestamp":"2016-07-12T07:23:24.104Z"}
+{"level":"info","message":"Load more triggered - from date:: 2016-06-02","timestamp":"2016-07-12T07:23:24.104Z"}
+{"level":"info","message":"Load more triggered - to date:: 2016-07-02","timestamp":"2016-07-12T07:23:24.104Z"}
+{"level":"info","message":"Load more triggered - to:: t10612208@52.27.0.146","timestamp":"2016-07-12T07:23:24.104Z"}
+{"level":"info","message":"Load more triggered - from:: t10609372@52.27.0.146","timestamp":"2016-07-12T07:23:24.104Z"}
+{"level":"info","message":"XMPP server connected","timestamp":"2016-07-12T07:28:08.033Z"}
+{"level":"info","message":"Server: t10612208 AUTHENTICATING....","timestamp":"2016-07-12T07:28:08.711Z"}
+{"level":"info","message":"UserName: t10612208","timestamp":"2016-07-12T07:28:08.712Z"}
+{"level":"info","message":"Password: 123580","timestamp":"2016-07-12T07:28:08.712Z"}
+{"level":"info","message":"Server: t10612208 Authentication success","timestamp":"2016-07-12T07:28:08.721Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T07:28:12.853Z"}
+{"level":"info","message":"<iq id=\"PwJDQ-219\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T07:28:12.853Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T07:28:12.853Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T07:28:12.878Z"}
+{"level":"info","message":"<iq id=\"PwJDQ-219\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T07:28:12.878Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T07:28:12.878Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T07:28:17.370Z"}
+{"level":"info","message":"<iq id=\"PwJDQ-222\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><MessageHistoryIQ xmlns=\"urn:xmpp:getmessagehistory\"><action_type>getMessagesByDate</action_type><from>2016-06-02</from><to>2016-07-02</to><jid_to>t10612208@52.27.0.146</jid_to><jid_from>t10609372@52.27.0.146</jid_from></MessageHistoryIQ></iq>","timestamp":"2016-07-12T07:28:17.370Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T07:28:17.370Z"}
+{"level":"info","message":"Message history - Load more triggered - by:: t10612208@52.27.0.146","timestamp":"2016-07-12T07:28:17.373Z"}
+{"level":"info","message":"Load more triggered - from date:: 2016-06-02","timestamp":"2016-07-12T07:28:17.373Z"}
+{"level":"info","message":"Load more triggered - to date:: 2016-07-02","timestamp":"2016-07-12T07:28:17.373Z"}
+{"level":"info","message":"Load more triggered - to:: t10612208@52.27.0.146","timestamp":"2016-07-12T07:28:17.373Z"}
+{"level":"info","message":"Load more triggered - from:: t10609372@52.27.0.146","timestamp":"2016-07-12T07:28:17.373Z"}
+{"level":"info","message":"XMPP server connected","timestamp":"2016-07-12T07:31:34.560Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T07:31:38.160Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"PwJDQ-247\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><MessageHistoryIQ xmlns=\"urn:xmpp:getmessagehistory\"><action_type>quitapp</action_type></MessageHistoryIQ></iq>","timestamp":"2016-07-12T07:31:38.160Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T07:31:38.160Z"}
+{"level":"info","message":"Server: t10612208 AUTHENTICATING....","timestamp":"2016-07-12T07:31:44.369Z"}
+{"level":"info","message":"UserName: t10612208","timestamp":"2016-07-12T07:31:44.370Z"}
+{"level":"info","message":"Password: 123580","timestamp":"2016-07-12T07:31:44.370Z"}
+{"level":"info","message":"Server: t10612208 Authentication success","timestamp":"2016-07-12T07:31:44.375Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T07:31:53.496Z"}
+{"level":"info","message":"<iq id=\"jBL0g-7\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T07:31:53.496Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T07:31:53.496Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T07:31:53.510Z"}
+{"level":"info","message":"<iq id=\"jBL0g-7\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T07:31:53.510Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T07:31:53.510Z"}
+{"level":"error","message":"There is no user with jid - t10612208@52.27.0.146","timestamp":"2016-07-12T07:31:54.515Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T07:31:54.515Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"jBL0g-9\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><MessageHistoryIQ xmlns=\"urn:xmpp:getmessagehistory\"><action_type>quitapp</action_type></MessageHistoryIQ></iq>","timestamp":"2016-07-12T07:31:54.515Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T07:31:54.515Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T07:31:54.831Z"}
+{"level":"info","message":"<iq id=\"jBL0g-19\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T07:31:54.831Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T07:31:54.831Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T07:31:54.844Z"}
+{"level":"info","message":"<iq id=\"jBL0g-19\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T07:31:54.844Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T07:31:54.844Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T07:31:55.404Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"jBL0g-21\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><MessageHistoryIQ xmlns=\"urn:xmpp:getmessagehistory\"><action_type>getOldMessages</action_type></MessageHistoryIQ></iq>","timestamp":"2016-07-12T07:31:55.404Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T07:31:55.404Z"}
+{"level":"info","message":"Message history - Sending All messages from server to:: t10612208@52.27.0.146","timestamp":"2016-07-12T07:31:55.405Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T07:31:58.771Z"}
+{"level":"info","message":"<iq id=\"h22xA-10\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T07:31:58.771Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T07:31:58.771Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T07:32:17.970Z"}
+{"level":"info","message":"<iq id=\"jBL0g-126\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T07:32:17.970Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T07:32:17.970Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T07:32:17.982Z"}
+{"level":"info","message":"<iq id=\"jBL0g-126\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T07:32:17.982Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T07:32:17.982Z"}
+{"level":"info","message":"App is seriously starting...","timestamp":"2016-07-12T07:44:52.822Z"}
+{"level":"info","message":"App starting...","timestamp":"2016-07-12T07:44:52.824Z"}
+{"level":"info","message":"App started .","timestamp":"2016-07-12T07:44:52.967Z"}
+{"level":"info","message":"App is running on - http://52.27.0.146:3000","timestamp":"2016-07-12T07:44:52.968Z"}
+{"level":"info","message":"XMPP Server is runnion on - 52.27.0.146:5222","timestamp":"2016-07-12T07:44:52.980Z"}
+{"level":"info","message":"App is seriously starting...","timestamp":"2016-07-12T07:45:05.765Z"}
+{"level":"info","message":"App starting...","timestamp":"2016-07-12T07:45:05.767Z"}
+{"level":"info","message":"App started .","timestamp":"2016-07-12T07:45:05.906Z"}
+{"level":"info","message":"App is running on - http://52.27.0.146:3000","timestamp":"2016-07-12T07:45:05.906Z"}
+{"level":"info","message":"XMPP Server is runnion on - 52.27.0.146:5222","timestamp":"2016-07-12T07:45:05.918Z"}
+{"level":"info","message":"XMPP server connected","timestamp":"2016-07-12T08:00:38.637Z"}
+{"level":"info","message":"Server: t10612208 AUTHENTICATING....","timestamp":"2016-07-12T08:00:39.351Z"}
+{"level":"info","message":"UserName: t10612208","timestamp":"2016-07-12T08:00:39.351Z"}
+{"level":"info","message":"Password: 123580","timestamp":"2016-07-12T08:00:39.352Z"}
+{"level":"info","message":"Server: t10612208 Authentication success","timestamp":"2016-07-12T08:00:39.375Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T08:00:41.204Z"}
+{"level":"info","message":"<iq id=\"jBL0g-195\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T08:00:41.205Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T08:00:41.205Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T08:00:41.228Z"}
+{"level":"info","message":"<iq id=\"jBL0g-195\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T08:00:41.228Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T08:00:41.229Z"}
+{"level":"error","message":"There is no user with jid - t10612208@52.27.0.146","timestamp":"2016-07-12T08:01:01.156Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T08:01:01.158Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"jBL0g-206\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><MessageHistoryIQ xmlns=\"urn:xmpp:getmessagehistory\"><action_type>quitapp</action_type></MessageHistoryIQ></iq>","timestamp":"2016-07-12T08:01:01.158Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T08:01:01.158Z"}
+{"level":"info","message":"XMPP server connected","timestamp":"2016-07-12T08:01:13.765Z"}
+{"level":"info","message":"Server: t10612208 AUTHENTICATING....","timestamp":"2016-07-12T08:01:14.505Z"}
+{"level":"info","message":"UserName: t10612208","timestamp":"2016-07-12T08:01:14.505Z"}
+{"level":"info","message":"Password: 123580","timestamp":"2016-07-12T08:01:14.505Z"}
+{"level":"info","message":"Server: t10612208 Authentication success","timestamp":"2016-07-12T08:01:14.514Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T08:01:16.457Z"}
+{"level":"info","message":"<iq id=\"35wXU-7\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T08:01:16.458Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T08:01:16.458Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T08:01:16.490Z"}
+{"level":"info","message":"<iq id=\"35wXU-7\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T08:01:16.490Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T08:01:16.491Z"}
+{"level":"error","message":"There is no user with jid - t10612208@52.27.0.146","timestamp":"2016-07-12T08:01:16.838Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T08:01:16.840Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"35wXU-9\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><MessageHistoryIQ xmlns=\"urn:xmpp:getmessagehistory\"><action_type>quitapp</action_type></MessageHistoryIQ></iq>","timestamp":"2016-07-12T08:01:16.840Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T08:01:16.840Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T08:01:17.302Z"}
+{"level":"info","message":"<iq id=\"35wXU-19\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T08:01:17.303Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T08:01:17.303Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T08:01:17.318Z"}
+{"level":"info","message":"<iq id=\"35wXU-19\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T08:01:17.318Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T08:01:17.318Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T08:01:17.763Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"35wXU-21\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><MessageHistoryIQ xmlns=\"urn:xmpp:getmessagehistory\"><action_type>getOldMessages</action_type></MessageHistoryIQ></iq>","timestamp":"2016-07-12T08:01:17.763Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T08:01:17.763Z"}
+{"level":"info","message":"Message history - Sending All messages from server to:: t10612208@52.27.0.146","timestamp":"2016-07-12T08:01:17.764Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T08:01:19.603Z"}
+{"level":"info","message":"<iq id=\"h22xA-10\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T08:01:19.603Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T08:01:19.604Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T08:01:33.961Z"}
+{"level":"info","message":"<iq id=\"35wXU-21\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T08:01:33.961Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T08:01:33.961Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T08:01:37.407Z"}
+{"level":"info","message":"<iq id=\"35wXU-21\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T08:01:37.407Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T08:01:37.407Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T08:01:37.408Z"}
+{"level":"info","message":"<iq id=\"35wXU-21\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T08:01:37.408Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T08:01:37.408Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T08:01:38.009Z"}
+{"level":"info","message":"<iq id=\"35wXU-21\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T08:01:38.010Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T08:01:38.010Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T08:31:37.453Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"35wXU-189\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>","timestamp":"2016-07-12T08:31:37.453Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T08:31:37.454Z"}
+{"level":"info","message":"XMPP server connected","timestamp":"2016-07-12T09:31:23.214Z"}
+{"level":"info","message":"Server: t10612208 AUTHENTICATING....","timestamp":"2016-07-12T09:31:24.003Z"}
+{"level":"info","message":"UserName: t10612208","timestamp":"2016-07-12T09:31:24.003Z"}
+{"level":"info","message":"Password: 123580","timestamp":"2016-07-12T09:31:24.003Z"}
+{"level":"info","message":"Server: t10612208 Authentication success","timestamp":"2016-07-12T09:31:24.010Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T09:31:27.435Z"}
+{"level":"info","message":"<iq id=\"35wXU-205\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T09:31:27.435Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T09:31:27.436Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T09:31:27.450Z"}
+{"level":"info","message":"<iq id=\"35wXU-205\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T09:31:27.451Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T09:31:27.451Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:01:29.430Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"35wXU-216\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>","timestamp":"2016-07-12T10:01:29.431Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:01:29.431Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:31:29.990Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"35wXU-218\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><ping xmlns=\"urn:xmpp:ping\"/></iq>","timestamp":"2016-07-12T10:31:29.991Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:31:29.991Z"}
+{"level":"info","message":"XMPP server connected","timestamp":"2016-07-12T10:47:32.326Z"}
+{"level":"info","message":"Server: t10612208 AUTHENTICATING....","timestamp":"2016-07-12T10:47:38.713Z"}
+{"level":"info","message":"UserName: t10612208","timestamp":"2016-07-12T10:47:38.713Z"}
+{"level":"info","message":"Password: 123580","timestamp":"2016-07-12T10:47:38.713Z"}
+{"level":"info","message":"Server: t10612208 Authentication success","timestamp":"2016-07-12T10:47:38.719Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:47:43.898Z"}
+{"level":"info","message":"<iq id=\"1aPNH-7\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T10:47:43.898Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:47:43.898Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T10:47:43.910Z"}
+{"level":"info","message":"<iq id=\"1aPNH-7\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T10:47:43.910Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T10:47:43.910Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:48:01.232Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"1aPNH-18\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><HideRoasterIQ xmlns=\"urn:xmpp:gethideroaster\"><action_type>hidecontact</action_type><roasterJID>t10609372@52.27.0.146</roasterJID></HideRoasterIQ></iq>","timestamp":"2016-07-12T10:48:01.232Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:48:01.232Z"}
+{"level":"info","message":"XMPP server connected","timestamp":"2016-07-12T10:53:30.168Z"}
+{"level":"info","message":"OTP code: 793388","timestamp":"2016-07-12T10:53:31.190Z"}
+{"level":"info","message":"sending mail to:: suraj.shinde@lntinfotech.com","timestamp":"2016-07-12T10:53:31.194Z"}
+{"level":"info","message":"update password err ::null","timestamp":"2016-07-12T10:54:02.699Z"}
+{"level":"info","message":"Server: t10612208 AUTHENTICATING....","timestamp":"2016-07-12T10:54:07.697Z"}
+{"level":"info","message":"UserName: t10612208","timestamp":"2016-07-12T10:54:07.697Z"}
+{"level":"info","message":"Password: 123580","timestamp":"2016-07-12T10:54:07.697Z"}
+{"level":"info","message":"Server: t10612208 Authentication success","timestamp":"2016-07-12T10:54:07.702Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:54:10.207Z"}
+{"level":"info","message":"<iq id=\"5d50P-16\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T10:54:10.207Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:54:10.207Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T10:54:10.220Z"}
+{"level":"info","message":"<iq id=\"5d50P-16\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T10:54:10.220Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T10:54:10.220Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:54:11.741Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"5d50P-18\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><MessageHistoryIQ xmlns=\"urn:xmpp:getmessagehistory\"><action_type>quitapp</action_type></MessageHistoryIQ></iq>","timestamp":"2016-07-12T10:54:11.741Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:54:11.741Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:54:12.138Z"}
+{"level":"info","message":"<iq id=\"5d50P-20\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T10:54:12.138Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:54:12.139Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T10:54:12.152Z"}
+{"level":"info","message":"<iq id=\"5d50P-20\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T10:54:12.152Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T10:54:12.152Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:54:12.734Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"5d50P-38\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><MessageHistoryIQ xmlns=\"urn:xmpp:getmessagehistory\"><action_type>getOldMessages</action_type></MessageHistoryIQ></iq>","timestamp":"2016-07-12T10:54:12.735Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:54:12.735Z"}
+{"level":"info","message":"Message history - Sending All messages from server to:: t10612208@52.27.0.146","timestamp":"2016-07-12T10:54:12.735Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:54:13.254Z"}
+{"level":"info","message":"<iq id=\"h22xA-10\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T10:54:13.254Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:54:13.254Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:54:18.197Z"}
+{"level":"info","message":"<iq id=\"5d50P-38\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T10:54:18.197Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:54:18.197Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:54:18.572Z"}
+{"level":"info","message":"<iq id=\"5d50P-38\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T10:54:18.572Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:54:18.572Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:54:18.573Z"}
+{"level":"info","message":"<iq id=\"5d50P-38\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T10:54:18.573Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:54:18.573Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:54:18.574Z"}
+{"level":"info","message":"<iq id=\"5d50P-38\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T10:54:18.574Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:54:18.574Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:54:19.365Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"5d50P-199\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><sendgcmtokenIQ xmlns=\"urn:xmpp:SendGCMToken\"><gcmtoken>{\"GCMToken\":\"eyf05x8tJZE:APA91bEVNeU70RBdHDvdMzYps2aETfvwRk63Q2FdV_RsRdmOiYDIhE8JPh0X32eQjUQMNEpJ94-0k3WQH5GQxNnT8n6gWzhcjyRPrj0GlTD9i0lRCJTc_bnoQG7w4zJJoGEWZkiCWOiZ\"}</gcmtoken><action_type>SendGCMToken</action_type><response/></sendgcmtokenIQ></iq>","timestamp":"2016-07-12T10:54:19.366Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:54:19.366Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:54:19.823Z"}
+{"level":"info","message":"<iq id=\"5d50P-199\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T10:54:19.823Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:54:19.823Z"}
+{"level":"info","message":"XMPP server connected","timestamp":"2016-07-12T10:55:37.007Z"}
+{"level":"info","message":"Server: t10612208 AUTHENTICATING....","timestamp":"2016-07-12T10:55:38.863Z"}
+{"level":"info","message":"UserName: t10612208","timestamp":"2016-07-12T10:55:38.863Z"}
+{"level":"info","message":"Password: 123580","timestamp":"2016-07-12T10:55:38.863Z"}
+{"level":"info","message":"Server: t10612208 Authentication success","timestamp":"2016-07-12T10:55:38.869Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:55:41.010Z"}
+{"level":"info","message":"<iq id=\"l2Heo-7\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T10:55:41.010Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:55:41.010Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T10:55:41.022Z"}
+{"level":"info","message":"<iq id=\"l2Heo-7\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T10:55:41.022Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T10:55:41.022Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:55:48.495Z"}
+{"level":"info","message":"<iq id=\"l2Heo-19\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T10:55:48.495Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:55:48.495Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T10:55:48.508Z"}
+{"level":"info","message":"<iq id=\"l2Heo-19\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T10:55:48.509Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T10:55:48.509Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:55:49.452Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"l2Heo-29\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><MessageHistoryIQ xmlns=\"urn:xmpp:getmessagehistory\"><action_type>getOldMessages</action_type></MessageHistoryIQ></iq>","timestamp":"2016-07-12T10:55:49.453Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:55:49.453Z"}
+{"level":"info","message":"Message history - Sending All messages from server to:: t10612208@52.27.0.146","timestamp":"2016-07-12T10:55:49.453Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:55:50.235Z"}
+{"level":"info","message":"<iq id=\"h22xA-10\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T10:55:50.235Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:55:50.235Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:55:52.008Z"}
+{"level":"info","message":"<iq id=\"l2Heo-29\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T10:55:52.009Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:55:52.009Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:55:52.010Z"}
+{"level":"info","message":"<iq id=\"l2Heo-29\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T10:55:52.010Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:55:52.010Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:55:52.010Z"}
+{"level":"info","message":"<iq id=\"l2Heo-29\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T10:55:52.010Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:55:52.010Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:55:52.349Z"}
+{"level":"info","message":"<iq id=\"l2Heo-29\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T10:55:52.349Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:55:52.349Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:56:29.979Z"}
+{"level":"info","message":"<iq id=\"l2Heo-190\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><MessageHistoryIQ xmlns=\"urn:xmpp:getmessagehistory\"><action_type>getMessagesByDate</action_type><from>2016-06-02</from><to>2016-07-02</to><jid_to>t10612208@52.27.0.146</jid_to><jid_from>t10609372@52.27.0.146</jid_from></MessageHistoryIQ></iq>","timestamp":"2016-07-12T10:56:29.980Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:56:29.980Z"}
+{"level":"info","message":"Message history - Load more triggered - by:: t10612208@52.27.0.146","timestamp":"2016-07-12T10:56:29.980Z"}
+{"level":"info","message":"Load more triggered - from date:: 2016-06-02","timestamp":"2016-07-12T10:56:29.980Z"}
+{"level":"info","message":"Load more triggered - to date:: 2016-07-02","timestamp":"2016-07-12T10:56:29.980Z"}
+{"level":"info","message":"Load more triggered - to:: t10612208@52.27.0.146","timestamp":"2016-07-12T10:56:29.980Z"}
+{"level":"info","message":"Load more triggered - from:: t10609372@52.27.0.146","timestamp":"2016-07-12T10:56:29.980Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:57:34.072Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"l2Heo-205\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><MessageHistoryIQ xmlns=\"urn:xmpp:getmessagehistory\"><action_type>quitapp</action_type></MessageHistoryIQ></iq>","timestamp":"2016-07-12T10:57:34.072Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:57:34.072Z"}
+{"level":"info","message":"XMPP server connected","timestamp":"2016-07-12T10:58:53.387Z"}
+{"level":"info","message":"OTP code: 669139","timestamp":"2016-07-12T10:58:54.058Z"}
+{"level":"info","message":"sending mail to:: suraj.shinde@lntinfotech.com","timestamp":"2016-07-12T10:58:54.060Z"}
+{"level":"info","message":"update password err ::null","timestamp":"2016-07-12T10:59:32.475Z"}
+{"level":"info","message":"Server: t10612208 AUTHENTICATING....","timestamp":"2016-07-12T10:59:36.967Z"}
+{"level":"info","message":"UserName: t10612208","timestamp":"2016-07-12T10:59:36.967Z"}
+{"level":"info","message":"Password: 123580","timestamp":"2016-07-12T10:59:36.967Z"}
+{"level":"info","message":"Server: t10612208 Authentication success","timestamp":"2016-07-12T10:59:36.972Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:59:39.011Z"}
+{"level":"info","message":"<iq id=\"unv5Y-16\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T10:59:39.011Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:59:39.011Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T10:59:39.023Z"}
+{"level":"info","message":"<iq id=\"unv5Y-16\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T10:59:39.023Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T10:59:39.023Z"}
+{"level":"error","message":"There is no user with jid - t10612208@52.27.0.146","timestamp":"2016-07-12T10:59:39.400Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:59:39.400Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"unv5Y-18\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><MessageHistoryIQ xmlns=\"urn:xmpp:getmessagehistory\"><action_type>quitapp</action_type></MessageHistoryIQ></iq>","timestamp":"2016-07-12T10:59:39.400Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:59:39.400Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:59:39.701Z"}
+{"level":"info","message":"<iq id=\"unv5Y-28\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T10:59:39.701Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:59:39.701Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T10:59:39.714Z"}
+{"level":"info","message":"<iq id=\"unv5Y-28\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T10:59:39.714Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T10:59:39.714Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:59:40.012Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"unv5Y-29\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><MessageHistoryIQ xmlns=\"urn:xmpp:getmessagehistory\"><action_type>getOldMessages</action_type></MessageHistoryIQ></iq>","timestamp":"2016-07-12T10:59:40.013Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:59:40.013Z"}
+{"level":"info","message":"Message history - Sending All messages from server to:: t10612208@52.27.0.146","timestamp":"2016-07-12T10:59:40.013Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:59:40.434Z"}
+{"level":"info","message":"<iq id=\"h22xA-10\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T10:59:40.434Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:59:40.434Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:59:42.607Z"}
+{"level":"info","message":"<iq id=\"unv5Y-29\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T10:59:42.608Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:59:42.608Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:59:42.955Z"}
+{"level":"info","message":"<iq id=\"unv5Y-29\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T10:59:42.955Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:59:42.955Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:59:42.956Z"}
+{"level":"info","message":"<iq id=\"unv5Y-29\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T10:59:42.956Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:59:42.956Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:59:42.957Z"}
+{"level":"info","message":"<iq id=\"unv5Y-29\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T10:59:42.957Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:59:42.957Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:59:43.179Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"unv5Y-199\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><sendgcmtokenIQ xmlns=\"urn:xmpp:SendGCMToken\"><gcmtoken>{\"GCMToken\":\"d7AjtejkUmA:APA91bH0BLEwkS55PyJt5N_FVP_hKmUmpHH6r2iI2zbVRWCvapZt-kI7jWJaLaqyhAyyXIaLRVZv1x4M6xwHcgkhFXevYd0tbW2mZETMgkghaiGvzzGGlLNQ2L0wmx0aX_CybYBc2Xhl\"}</gcmtoken><action_type>SendGCMToken</action_type><response/></sendgcmtokenIQ></iq>","timestamp":"2016-07-12T10:59:43.179Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:59:43.179Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T10:59:43.629Z"}
+{"level":"info","message":"<iq id=\"unv5Y-199\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T10:59:43.629Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T10:59:43.629Z"}
+{"level":"info","message":"XMPP server connected","timestamp":"2016-07-12T11:00:41.859Z"}
+{"level":"info","message":"Server: t10612208 AUTHENTICATING....","timestamp":"2016-07-12T11:00:43.916Z"}
+{"level":"info","message":"UserName: t10612208","timestamp":"2016-07-12T11:00:43.916Z"}
+{"level":"info","message":"Password: 123580","timestamp":"2016-07-12T11:00:43.917Z"}
+{"level":"info","message":"Server: t10612208 Authentication success","timestamp":"2016-07-12T11:00:43.922Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T11:00:47.039Z"}
+{"level":"info","message":"<iq id=\"a64bU-7\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T11:00:47.039Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T11:00:47.039Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T11:00:47.051Z"}
+{"level":"info","message":"<iq id=\"a64bU-7\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T11:00:47.052Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T11:00:47.052Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T11:00:47.759Z"}
+{"level":"info","message":"<iq id=\"a64bU-19\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T11:00:47.759Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T11:00:47.759Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T11:00:47.772Z"}
+{"level":"info","message":"<iq id=\"a64bU-19\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T11:00:47.772Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T11:00:47.772Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T11:00:48.221Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"a64bU-21\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><MessageHistoryIQ xmlns=\"urn:xmpp:getmessagehistory\"><action_type>getOldMessages</action_type></MessageHistoryIQ></iq>","timestamp":"2016-07-12T11:00:48.221Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T11:00:48.221Z"}
+{"level":"info","message":"Message history - Sending All messages from server to:: t10612208@52.27.0.146","timestamp":"2016-07-12T11:00:48.221Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T11:00:48.905Z"}
+{"level":"info","message":"<iq id=\"h22xA-10\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T11:00:48.905Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T11:00:48.905Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T11:00:52.294Z"}
+{"level":"info","message":"<iq id=\"a64bU-21\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T11:00:52.295Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T11:00:52.295Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T11:00:52.674Z"}
+{"level":"info","message":"<iq id=\"a64bU-21\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T11:00:52.674Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T11:00:52.674Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T11:00:52.675Z"}
+{"level":"info","message":"<iq id=\"a64bU-21\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T11:00:52.675Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T11:00:52.675Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T11:00:52.931Z"}
+{"level":"info","message":"<iq id=\"a64bU-21\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T11:00:52.931Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T11:00:52.931Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T11:01:09.837Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"a64bU-191\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><MessageHistoryIQ xmlns=\"urn:xmpp:getmessagehistory\"><action_type>quitapp</action_type></MessageHistoryIQ></iq>","timestamp":"2016-07-12T11:01:09.837Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T11:01:09.838Z"}
+{"level":"info","message":"XMPP server connected","timestamp":"2016-07-12T11:03:02.045Z"}
+{"level":"info","message":"OTP code: 890414","timestamp":"2016-07-12T11:03:02.801Z"}
+{"level":"info","message":"sending mail to:: suraj.shinde@lntinfotech.com","timestamp":"2016-07-12T11:03:02.804Z"}
+{"level":"info","message":"update password err ::null","timestamp":"2016-07-12T11:06:12.014Z"}
+{"level":"info","message":"Server: t10612208 AUTHENTICATING....","timestamp":"2016-07-12T11:06:17.020Z"}
+{"level":"info","message":"UserName: t10612208","timestamp":"2016-07-12T11:06:17.021Z"}
+{"level":"info","message":"Password: 123580","timestamp":"2016-07-12T11:06:17.021Z"}
+{"level":"info","message":"Server: t10612208 Authentication success","timestamp":"2016-07-12T11:06:17.026Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T11:06:19.485Z"}
+{"level":"info","message":"<iq id=\"pKLYx-32\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T11:06:19.485Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T11:06:19.485Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T11:06:19.498Z"}
+{"level":"info","message":"<iq id=\"pKLYx-32\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T11:06:19.498Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T11:06:19.498Z"}
+{"level":"error","message":"There is no user with jid - t10612208@52.27.0.146","timestamp":"2016-07-12T11:06:19.994Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T11:06:19.995Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"pKLYx-34\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><MessageHistoryIQ xmlns=\"urn:xmpp:getmessagehistory\"><action_type>quitapp</action_type></MessageHistoryIQ></iq>","timestamp":"2016-07-12T11:06:19.995Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T11:06:19.995Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T11:06:20.394Z"}
+{"level":"info","message":"<iq id=\"pKLYx-44\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T11:06:20.394Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T11:06:20.394Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T11:06:20.407Z"}
+{"level":"info","message":"<iq id=\"pKLYx-44\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T11:06:20.407Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T11:06:20.407Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T11:06:20.907Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"pKLYx-46\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><MessageHistoryIQ xmlns=\"urn:xmpp:getmessagehistory\"><action_type>getOldMessages</action_type></MessageHistoryIQ></iq>","timestamp":"2016-07-12T11:06:20.907Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T11:06:20.907Z"}
+{"level":"info","message":"Message history - Sending All messages from server to:: t10612208@52.27.0.146","timestamp":"2016-07-12T11:06:20.908Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T11:06:21.480Z"}
+{"level":"info","message":"<iq id=\"h22xA-10\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T11:06:21.480Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T11:06:21.480Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T11:06:24.737Z"}
+{"level":"info","message":"<iq id=\"pKLYx-46\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T11:06:24.738Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T11:06:24.738Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T11:06:25.040Z"}
+{"level":"info","message":"<iq id=\"pKLYx-46\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T11:06:25.040Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T11:06:25.040Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T11:06:25.262Z"}
+{"level":"info","message":"<iq id=\"pKLYx-46\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T11:06:25.263Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T11:06:25.263Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T11:06:25.299Z"}
+{"level":"info","message":"<iq id=\"pKLYx-46\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T11:06:25.299Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T11:06:25.299Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T11:06:32.334Z"}
+{"level":"info","message":"<iq to=\"52.27.0.146\" id=\"pKLYx-216\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><sendgcmtokenIQ xmlns=\"urn:xmpp:SendGCMToken\"><gcmtoken>{\"GCMToken\":\"cAyI1qhhEZM:APA91bHPIGL-uAFJxHHgr3rW66ikRWgSVvaXmTuqsX5d_rWuHolxpLNAtX3HPSKIab3fZ5mAydB4Z9HZfEqbVp5ndywq2cDE00zkCivhNk3Jd2SIitbiSE0D-FWHyl5l9pBbJqXEFR0X\"}</gcmtoken><action_type>SendGCMToken</action_type><response/></sendgcmtokenIQ></iq>","timestamp":"2016-07-12T11:06:32.334Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T11:06:32.334Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T11:06:32.992Z"}
+{"level":"info","message":"<iq id=\"pKLYx-216\" type=\"error\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><error type=\"cancel\"><feature-not-implemented xmlns=\"urn:ietf:params:xml:ns:xmpp-stanzas\"/></error></iq>","timestamp":"2016-07-12T11:06:32.992Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T11:06:32.993Z"}
+{"level":"info","message":"XMPP server connected","timestamp":"2016-07-12T11:32:19.723Z"}
+{"level":"info","message":"Server: t10612208 AUTHENTICATING....","timestamp":"2016-07-12T11:32:23.172Z"}
+{"level":"info","message":"UserName: t10612208","timestamp":"2016-07-12T11:32:23.172Z"}
+{"level":"info","message":"Password: 123580","timestamp":"2016-07-12T11:32:23.172Z"}
+{"level":"info","message":"Server: t10612208 Authentication success","timestamp":"2016-07-12T11:32:23.176Z"}
+{"level":"info","message":"********All IQ stanzas***********","timestamp":"2016-07-12T11:32:34.363Z"}
+{"level":"info","message":"<iq id=\"pKLYx-229\" type=\"get\" xmlns:stream=\"http://etherx.jabber.org/streams\" from=\"t10612208@52.27.0.146/Smack\" xmlns=\"jabber:client\"><query xmlns=\"jabber:iq:roster\"/></iq>","timestamp":"2016-07-12T11:32:34.364Z"}
+{"level":"info","message":"*******************","timestamp":"2016-07-12T11:32:34.364Z"}
+{"level":"info","message":"*****Roster users sent to:: t10612208@52.27.0.146:: *****","timestamp":"2016-07-12T11:32:34.376Z"}
+{"level":"info","message":"<iq id=\"pKLYx-229\" to=\"t10612208@52.27.0.146/Smack\" type=\"result\"><query xmlns=\"jabber:iq:roster\" ver=\"ver13\"><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t0000001@52.27.0.146\" name=\"Hrideshhh pr\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"t10609372@52.27.0.146\" name=\"Rajaram Sitaramannn\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"1@52.27.0.146\" name=\"test1\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"2@52.27.0.146\" name=\"test2\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"3@52.27.0.146\" name=\"test4\" subscription=\"both\" status=\"Custom Message Online\"/><item jid=\"4@52.27.0.146\" name=\"test5\" subscription=\"both\" status=\"Custom Message Online\"/></query></iq>","timestamp":"2016-07-12T11:32:34.376Z"}
+{"level":"info","message":"*****Roster users end*****","timestamp":"2016-07-12T11:32:34.376Z"}
+{"level":"info","message":"XMPP server connected","timestamp":"2016-07-12T11:34:37.101Z"}
+{"level":"info","message":"Server: t10612208 AUTHENTICATING....","timestamp":"2016-07-12T11:34:44.398Z"}
+{"level":"info","message":"UserName: t10612208","timestamp":"2016-07-12T11:34:44.399Z"}
+{"level":"info","message":"Password: 123580","timestamp":"2016-07-12T11:34:44.399Z"}
+{"level":"info","message":"Server: t10612208 Authentication success","timestamp":"2016-07-12T11:34:44.403Z"}
+{"level":"info","message":"XMPP server connected","timestamp":"2016-07-12T12:14:31.681Z"}
+{"level":"info","message":"OTP code: 482047","timestamp":"2016-07-12T12:14:33.148Z"}
+{"level":"info","message":"sending mail to:: suraj.shinde@lntinfotech.com","timestamp":"2016-07-12T12:14:33.151Z"}
+{"level":"info","message":"update password err ::null","timestamp":"2016-07-12T12:15:13.348Z"}

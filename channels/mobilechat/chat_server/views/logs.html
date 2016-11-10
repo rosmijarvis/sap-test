@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+<div ng-app="usermgmt" ng-controller="userctrl" class="content col-xs-12" id="usermanagement_page">	
+	<div class="content" id="logs_page">
+		<div class="container">
+		    <div class="col-xs-12 col-sm-12 col-md-12">
+		      <div class="table-responsive">
+		        <table class="table table-bordered table-hover">
+		          <thead>
+				      <tr>
+				        <th>SNO</th>
+				        <th>Date</th>
+				        <th>Log File</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <td>1</td>
+				        <td>01/02/16</td>
+				        <td>1.log</td>
+				      </tr>
+				    </tbody>
+		        </table>
+		      </div>
+		    </div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+
+

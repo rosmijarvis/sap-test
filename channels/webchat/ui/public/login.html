@@ -1,0 +1,145 @@
+<!Doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" , initial-scale=1.0>
+<title>Login Page</title>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.11.4.custom.js"></script>
+<script type="text/javascript" src="config/config.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/customstyle.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/jquery-ui.css" rel="stylesheet">
+<script src="js/socket.io.js"></script>
+<script src="js/guid.js"></script>
+<script src="config/config.js"></script>
+<script src="js/text-channel.js"></script>
+
+
+<link rel="stylesheet" href="css/Demo.css">
+<link rel="stylesheet" href="css/login_style.css">
+
+
+
+
+</head>
+<body class="body-cls">
+
+ <script>
+  
+	  
+	  
+	  function validateUser(){
+	  
+	  //alert(document.getElementById('email').value);
+	  //alert(document.getElementById('password').value);
+	  
+	  var username = document.getElementById('email').value;
+	  var password = document.getElementById('password').value;
+	  var data = {"username":username,"password":password};
+	  
+	  $.get( "/login", function( data, status ) {
+        
+		   alert(data);
+		   if(data === "Failure") {
+		   document.getElementById('messageDisplay').innerHTML = 'Please enter a valiud username and password';
+		   }
+        });
+	  
+	  
+	  
+	 /* if(null != username && '' != username && null != password && '' != password ){
+	   
+	    var status = 'failure';
+		
+		if('failure' == status){
+		
+			document.getElementById('messageDisplay').innerHTML = "Please enter a valid email and password."; 
+			
+		}
+	  
+	  
+	  }else{
+	  
+		document.getElementById('messageDisplay').innerHTML = "Please enter a valid email and password."; 
+		
+	  
+	  }*/
+	  
+	  
+	  }
+
+
+ </script>
+	<div class="container conatiner-cls"">
+		<header>
+            <nav class="navbar navbar-default navbar-cls">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <div class="navbar-brand">
+                            <img src="imgs/lt-infotech-logo.png" style="margin-top:10px;height:40px; ">
+
+                        </div>
+                    </div>
+                    <div class="title-cls" style="height:60px;line-height:60px;float:left;">
+                        &nbsp;| <b>d.lite</b> <span>Digital Ticketing Tool</span>
+                    </div>
+                    <div class="pull-right" style="line-height:60px;">
+                        <div class="top_small_links">
+                            <a href="Dashboard.html">Home</a>&nbsp;| FAQ | About us | Contact
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div style="float:left;margin-right:80px;color:#fff;">Help Desk No : <b>1800 659 7533</b></div>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+	
+	<hgroup>
+		<h1>Login</h1>
+		<h3>Please enter email ID and password.</h3>
+		<h4><span id="messageDisplay" class="messageDisplay"></span></h4>
+	</hgroup>
+	
+	<form action="/login">
+		<div class="group">
+		
+			<input type="email" id="email" name="email"><span class="highlight" ></span><span class="bar"></span>
+			<label>Email ID</label>
+		</div>
+		<div class="group">
+		<input type="password" id="password" name="password"><span class="highlight" ></span><span class="bar"></span>
+		<label>Password</label>
+		</div>
+
+		<div class="group">
+		<input type="submit" class="button buttonRed" value="Login" onclick="validateUser()"/>
+		<input type="reset" class="button buttonRed" value="Reset"/>
+		</div>
+		
+		
+
+	</form>
+       
+		<nav class="navbar navbar-default  navbar-fixed-bottom footer-cls ">
+			<div class="row" style="text-align: center; margin-top: 10px;">All
+				Contents @Copyright L&T Infotech,Inc 1997-2016.All
+				Rights Reserved.</div>
+				
+			<div class="row footer-version"><i>v4.212 | Voice Text</i></div>	
+		</nav>
+	
+ 
+</body>
+</html>
+
+
+
+

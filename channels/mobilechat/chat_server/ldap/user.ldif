@@ -1,0 +1,5 @@
+# USER ENTRY
+dn: cn=Rajaram,ou=People,dc=lnt,dc=com
+cn: Sheldon Cooper
+objectClass: person
+sn: S

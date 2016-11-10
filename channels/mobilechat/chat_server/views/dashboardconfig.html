@@ -1,0 +1,310 @@
+
+{% extends 'layout.html' %}
+
+
+{% block content %}
+	<form action = "/saveconfig" method="POST">
+		<input name="message_expiry_period" maxlength="10" size="10" value="{{result.message_expiry_period}}" type="hidden" />
+		<input name="message_see_more" maxlength="10" size="10" value="{{result.message_expiry_period}}" type="hidden" />
+		<div class="content" id="configuration_page">
+	    	<div class="container">
+				<div class="col-md-6">
+					<fieldset class="fsStyle">
+						<legend class="legendStyle">
+							<span href="#">Password configuration</span>
+						</legend>
+						<div class="row">
+							<div class="col-md-8">
+								<label for="password_expiry_period" class="labelStyle">Password Expiry Period :</label>
+							</div>
+							<div class="col-md-3">
+								<input name="password_expiry_period" maxlength="10" size="10" value="{{result.password_expiry_period}}" type="text">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8">
+								<label for="number_of_password_recovery_requests" class="labelStyle">No.of Password Recovery Requests:</label>
+							</div>
+							<div class="col-md-3">
+								<input name="number_of_password_recovery_requests" maxlength="10" size="10" value="{{result.number_of_password_recovery_requests}}" type="text">
+							</div>
+						</div>
+					</fieldset>
+				</div>	
+				<div class="col-md-6">
+						<fieldset class="fsStyle">
+							<legend class="legendStyle">
+								<span href="#">OTP configuration</span>
+							</legend>
+							<div class="row">
+								<div class="col-md-8">
+									<label for="otp_expiry_period" class="labelStyle">OTP Expiry Period:</label>
+								</div>
+								<div class="col-md-3">
+									<input name="otp_expiry_period" maxlength="10" size="10" value="{{result.otp_expiry_period}}" type="text">
+								</div>
+							</div>
+
+							<div class="row">
+								<!-- <div class="col-md-8">
+									<label for="otp_expiry_period" class="labelStyle">Reset OTP</label>
+								</div>
+								<div class="col-md-3">
+									<a href = "#">Select User</a>
+								</div> -->
+							</div>
+						</fieldset>
+				</div>
+			</div>
+			<div class="container">
+				<div class="col-md-6">
+					<fieldset class="fsStyle">
+						<legend class="legendStyle">
+							<span href="#">User configuration</span>
+						</legend>
+						<div class="row">
+							<div class="col-md-8">
+								<label for="lock_out_time"  class="labelStyle">Lock Out time:</label>
+							</div>
+							<div class="col-md-3">
+								<input name="lock_out_time" id="louttime" onblur="valTime(this.id);" maxlength="10" size="10" value="{{result.lock_out_time}}" type="text">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8">
+								<label for="log_off_time"  class="labelStyle">Log off time:</label>
+							</div>
+							<div class="col-md-3">
+								<input name="log_off_time" id="lofftime"  onblur="valTime(this.id);" maxlength="10" size="10" value="{{result.log_off_time}}" type="text">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8">
+								<label for="number_of_login_attempts" class="labelStyle">Number of Login attempts:</label>
+							</div>
+							<div class="col-md-3">
+								<input name="number_of_login_attempts" maxlength="10" size="10" value="{{result.number_of_login_attempts}}" type="text">
+							</div>
+						</div>
+					</fieldset>
+				</div>
+				<div class="col-md-6">
+						<fieldset class="fsStyle">
+							<legend class="legendStyle">
+								<span href="#">Global configuration</span>
+							</legend>
+							<div class="row">
+								<div class="col-md-4">
+									<label for="global_email" class="labelStyle">Global email:</label>
+								</div>
+								<div class="col-md-7">
+									<input name="global_email" value="{{result_config.global_email}}" type="text">
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-4">
+									<label for="global_domain" class="labelStyle">Global domain:</label>
+								</div>
+								<div class="col-md-7">
+									<input name="global_domain" value="{{result_config.global_domain}}" type="text">
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-4">
+									<label for="global_domain" class="labelStyle">Log Duration:</label>
+								</div>
+								<div class="col-md-7">
+									<input name="global_logspan" value="{{result_config.global_logspan}}" type="number">
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-4">
+									<label for="debug" class="labelStyle">Debug mode:</label>
+								</div>
+								<div class="col-md-7">
+									{% if result_config.debug == 'true' %}
+										<input name="debug" checked type="checkbox" />
+									{% else %}
+										<input name="debug" type="checkbox" />
+									{% endif %}
+								</div>
+							</div>
+						<span class = "note-red">* Server restart required</span>
+						</fieldset>
+				</div>
+				
+			</div>
+		    	<div class="container">
+		    		<div class="col-md-6">
+					<fieldset class="fsStyle">
+						<legend class="legendStyle">
+							SMTP
+						</legend>
+						<div class="row">
+							<div class="col-md-3">
+								<label for="host" class="labelStyle">Host:</label>
+							</div>
+							<div class="col-md-4">
+								<input name="host" maxlength="30" size="30" value="{{result_config.host}}" type="text">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<label for="user" class="labelStyle">User:</label>
+							</div>
+							<div class="col-md-4">
+								<input name="user" maxlength="30" size="30" value="{{result_config.user}}" type="text">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<label for="password" class="labelStyle">Password:</label>
+							</div>
+							<div class="col-md-4">
+								<input name="smtp_password" maxlength="30" size="30" value = "{{result_config.password}}" type="text">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<label for="email" class="labelStyle">Email:</label>
+							</div>
+							<div class="col-md-4">
+								<input name="email" maxlength="130" value = "{{result_config.email}}" size="30" type="text">
+							</div>
+						</div>
+						<span class = "note-red">* Server restart required</span>
+					</fieldset>
+				</div>	
+					<div class="col-md-6">
+						<fieldset class="fsStyle">
+							<legend class="legendStyle">
+								LDAP
+							</legend>
+							<div class="row">
+								<div class="col-md-3">
+									<label for="port" class="labelStyle">Port:</label>
+								</div>
+								<div class="col-md-4">
+									<input name="ldap_port" maxlength="30" size="30" value="{{result_config.ldapport}}" type="text">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<label for="ip" class="labelStyle">IP:</label>
+								</div>
+								<div class="col-md-4">
+									<input name="ldap_ip" maxlength="30" size="30" value="{{result_config.ldapip}}" type="text">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<label for="dn" class="labelStyle">DN:</label>
+								</div>
+								<div class="col-md-4">
+									<input name="ldap_dn" maxlength="30" size="30" value = "{{result_config.dn}}" type="text">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<label for="password" class="labelStyle">Password:</label>
+								</div>
+								<div class="col-md-4">
+									<input name="ldap_password" maxlength="30" value = "{{result_config.ldappass}}" size="30" type="password">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<label for="password" class="labelStyle">OU:</label>
+								</div>
+								<div class="col-md-4">
+									<input name="ldap_ou" maxlength="30" value = "{{result_config.ou}}" size="30" type="text">
+								</div>
+							</div>
+						<span class = "note-red">* Server restart required</span>
+						</fieldset>
+					</div>
+				</div>
+				<div class="container">
+		    		<div class="col-md-6">
+					<fieldset class="fsStyle">
+						<legend class="legendStyle">
+							GCM
+						</legend>
+						<div class="row">
+							<div class="col-md-4">
+								<label for="gcm_api" class="labelStyle">API Key:</label>
+							</div>
+							<div class="col-md-4">
+								<input name="gcm_api" value="{{result_config.gcm_api}}" type="text">
+							</div>
+						</div>
+						<div class="row hide">
+							<div class="col-md-4">
+								<label for="gcm_package" class="labelStyle">Package Name:</label>
+							</div>
+							<div class="col-md-4">
+								<input name="gcm_package" value="{{result_config.gcm_package}}" type="text">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<label for="gcm_title" class="labelStyle">Notification Message:</label>
+							</div>
+							<div class="col-md-4">
+								<input name="gcm_title" value = "{{result_config.gcm_title}}" type="text">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<label for="gcm_proxy_url" class="labelStyle">Proxy URL:</label>
+							</div>
+							<div class="col-md-4">
+								<input name="gcm_proxy_url" value = "{{result_config.gcm_proxy_url}}" type="text">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<label for="gcm_proxy_username" class="labelStyle">Proxy username:</label>
+							</div>
+							<div class="col-md-4">
+								<input name="gcm_proxy_username" value = "{{result_config.gcm_proxy_username}}" type="text">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<label for="gcm_proxy_password" class="labelStyle">Proxy Password:</label>
+							</div>
+							<div class="col-md-4">
+								<input name="gcm_proxy_password" value = "{{result_config.gcm_proxy_password}}" type="text">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<label for="gcm_proxy_port" class="labelStyle">Proxy port:</label>
+							</div>
+							<div class="col-md-4">
+								<input name="gcm_proxy_port" value = "{{result_config.gcm_proxy_port}}" type="text">
+							</div>
+						</div>
+						<div class="row hide">
+							<div class="col-md-4">
+								<label for="gcm_content" class="labelStyle">Notification Content:</label>
+							</div>
+							<div class="col-md-4">
+								<input name="gcm_content" value = "{{result_config.gcm_content}}" type="text">
+							</div>
+						</div>
+						<span class = "note-red">* Proxy URL, username and password should not contain (@,/,\) special characters. Server restart required</span>
+					</fieldset>
+				</div>
+				</div>
+				<div class="submit-btn">
+					<button type="submit" class="btn btn-default">Submit</button>
+				</div>
+		
+		</div>
+	</form>
+{% endblock %}

@@ -1,0 +1,133 @@
+#two
+{
+	position: fixed;
+	bottom: 0px;
+	width: 350px; 
+	z-index: 99;
+}
+
+#start
+{
+	margin-left: 950px;
+	background-color: #434347;
+    height: 40px;
+    width: 350px;
+}
+#chatBox
+{
+	-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    //background-color: #ffffff;
+	//background-color: #838080;
+	background-color: #484850;
+    border-color: black black #484850;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    bottom: 50px;
+    height: 300px;
+    margin-left: 910px;
+    position: fixed;
+    width: 350px;
+    z-index: 111;
+}
+#chat_heading{
+    margin-left: 1%;
+    width: 108%;
+}
+#chat
+{
+	max-width: 350px; 
+	position: fixed;
+	bottom: 50px;
+	z-index: 100; 
+	overflow-y: auto;
+	overflow-x: hidden;
+	max-height:300px;
+}
+#chatBoxextend
+{
+	  -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    //background-color: #ffffff;
+	//background-color: #838080;
+	background-color: #434347;
+    border-color: #434347 black black;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    bottom: 0;
+    height: 50px;
+    margin-left: 910px;
+    padding: 4px;
+    position: fixed;
+    width: 350px;
+    z-index: 100;
+}
+#demo{
+
+	width:50%;
+}
+
+#demo
+{
+	//background-color: #838080;
+	background-color: #434347;
+	 border: medium none;
+    border-radius: 42px;
+    color: grey;
+    height: 37px;
+    margin-left: 16px;
+    max-width: 101%;
+    padding-bottom: 2px;
+    width: 224px;
+}
+#inputTextArea
+{
+	border: 1px solid #aaa;
+    border-radius: 55px;
+    color: grey;
+    height: 40px;
+    margin-left: 0;
+    max-width: 100%;
+    padding-left: 0;
+    width: 345px;
+}
+input:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+#button1
+{
+	/*margin-left: 10px; 
+	background-color: #CE0909; 
+	color: white; 
+	height: 36px; 
+	width: 63px;
+	border: 0px;
+	border-radius: 8%;*/
+	 height: 19px;
+    margin-left: 6px;
+}
+
+#record_button{
+	height: 21px;
+    margin-left: 32px;
+}
+#chat::-webkit-scrollbar{
+    width: 1em;
+}
+#chat::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 26px #484850;
+}
+#chat::-webkit-scrollbar-thumb {
+    background-color: #808080;
+    outline: 1px solid slategrey;
+}
+
+

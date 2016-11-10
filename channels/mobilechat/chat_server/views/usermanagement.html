@@ -1,0 +1,382 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+   
+  	<div ng-app="usermgmt" ng-controller="userctrl" class="content col-xs-12" id="usermanagement_page">
+	    <div class="container" style="padding-top:40px;">
+			<div role="search">
+
+				<div class="col-sm-12 col-md-12">
+					<div class="form-group col-sm-6 col-md-3 padding-zero">
+						<input type="text" ng-model = "search" ng-keyup = "searchUsers($event)" class="form-control search-field" id = 'searchField' placeholder="Search user name" />
+					</div>
+				</div>  
+
+				<div class="col-sm-12 col-md-12">
+					<div class="form-group col-sm-6 col-md-5 otp-panel">
+						<label for="sel1" class="col-md-4">Active/Inactive:</label>
+						<form action = "/usermanagement/active" method = "post">
+							<input type = "hidden" name = "user_id" id = "active_user_id" value = "" />
+							<div class="col-md-6 col-lg-6">
+								<select class="form-control" name = "is_active" id="sel1">
+							        <option value = "1">Active</option>
+							        <option value = "0">Inactive</option>
+							    </select>
+						    </div>
+						    <div class="delete-btn col-md-2">
+								<button type="submit" id = "is_active" class="btn btn-default">Go</button>
+							</div>
+						</form>
+				    </div>
+					<div class="form-group col-md-5 otp-panel pull-right">
+						<label for="sel1" class="col-md-4">Add/Delete User:</label>
+						<div class="col-md-2">
+							<!-- <form action = "/usermanagement/adduser" method="get"> -->
+								<input type = "hidden" name = "user_id" id = "add_user_id" value = "" />
+								<button type="button" onclick = "openModalAddUser()" class = "btn btn-default" data-toggle="modal" data-target="#myModalAdd" id= "add_user">Add</button>
+							<!-- </form> -->
+						</div>
+						<div class="col-md-2">
+							<form action = "/usermanagement/deleteuser" method="get" class="">
+								<input type = "hidden" name = "user_id" id = "delete_user_id" value = "" />
+								<button type="submit" class="btn btn-default" id= "delete_user">Delete</button>
+							</form>
+						</div>
+						<!-- <div class="col-md-2">
+							<form action = "/usermanagement/editImeiNumber" method="get" class="col-md-6">
+								<input type = "hidden" name = "user_id" id = "edit_imei_id" value = "" />
+								<button type="button" class="btn btn-default" id= "edit_imei">Edit Imei</button>
+							</form>
+						</div> -->
+					</div>
+				</div>
+
+				<div style = "clear:both"></div>
+
+			    <div class="col-sm-12 col-md-12">
+					<div class="form-group col-md-5 otp-panel">
+						<label for="sel1" class="col-md-4">Can Broadcast:</label>
+						<form action = "/usermanagement/broadcast" method = "post">
+							<input type = "hidden" name = "user_id" id = "broadcast_user_id" value = "" />
+							<div class="col-md-6 col-lg-6">
+								<select class="form-control" name = "can_broadcast" id="sel1">
+							        <option value = "1">Enable</option>
+							        <option value = "0">Disable</option>
+							    </select>
+						    </div>
+						    <div class="delete-btn col-md-2">
+								<button type="submit" id = "can_broadcast" class="btn btn-default">Go</button>
+							</div>
+						</form>
+					</div>
+					<form action="/usermanagement/resendOTP" method="post">
+						<div class="form-group col-md-5 otp-panel pull-right">
+							<label for="sel1" class="col-md-4">Resend OTP:</label>
+							<input type = "hidden" name = "user_id" id = "user_id_for_resend_otp" value = "" />
+							<div class="col-md-6">
+								<select class="form-control" name = "resend_otp" id="resendOTPList">
+							        <option value="user-registration">User Registration</option>
+							        <option value="password-recovery">Password Recovery</option>
+							        <option value="mobile-number-change">Mobile No. Change</option>
+							    </select>
+						    </div>
+						   
+						    <div class="delete-btn col-md-2">
+						    	<input type = "hidden" name = "resendOTP" id = "resend_otp_id" value = "" />
+								<button type="submit" id = "resend_otp" class="btn btn-default">Go</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div style = "clear:both"></div>
+				<div class="col-sm-12 col-md-12">
+					<div class="form-group col-md-5 otp-panel">
+						<label for="sel1" class="col-md-4">Bulk upload:</label>
+						<form action = "/usermanagement/bulkupload" enctype="multipart/form-data" method = "post">
+							<div class="col-md-6 col-lg-6">
+								<input type = "file" class = "bulk_users" name = "bulk_users" />
+								<input type = "hidden" id = "bulk_user_jid" name = "domain" value = "" />
+						    </div>
+						    <div class="delete-btn col-md-2">
+								<button type="submit" onclick = "document.getElementById('bulk_user_jid').value = window.location.hostname" id = "bulk" class="btn btn-default">Go</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				{% if message != '' %}
+					<div class = "alert-success alert">
+						{{message}}
+					</div>
+				{% endif %}
+				<div class="table-responsive">
+					<table class="table table-bordered table-hover user-table">
+					  <thead>
+					      <tr>
+					      	<th>Select</th>
+					        <th>Name</th>
+					        <th>Can Broadcast</th>
+					        <th>Active</th>
+					        <th>Status</th>
+					      </tr>
+					    </thead>
+					    <tbody id = "angular" ng-show = "show">
+					    	{% raw %}
+					    	<tr ng-show = "zero">
+					    		<td colspan = "8"> Search has no results </td>
+					    	</tr>
+							<tr ng-repeat="result in results">
+								<td><input type="checkbox" name = "checkBox[]" class = "user_select" value = "{{ result.user_id }}"></td>
+								<td ng-if="result.is_active == 0">
+									<a href="#">
+
+										<div id = "{{result.user_id}}" onclick = "openModalUser(this.id)" class = "toggleModal" data-toggle="modal" data-target="#myModal">
+											{{ result.first_name+' '+result.last_name }}
+										</div>
+									</a>
+								</td>
+								<td ng-if="result.is_active != 0">
+									<a href="#">
+
+										<div class = "toggleModal" onclick = "openModalUser(this.id)" id = "{{result.user_id}}" data-toggle="modal" data-target="#myModal">
+											{{ result.first_name+' '+result.last_name }}
+										</div>
+									</a>
+								</td>							
+								<td ng-if = "result.can_broadcast == 1">
+									<span>
+										<img src="./images/available.png" alt="Can broadcast" />
+									</span>
+								</td>
+								<td ng-if = "result.can_broadcast == 0">
+									<span>
+										<img src="./images/offline.png" alt="Cannot broadcast" />
+									</span>
+								</td>
+								<td ng-if = "result.is_active == 1">
+									<span>
+										<img src="./images/available.png" alt="Can broadcast" />
+									</span>
+								</td>
+								<td ng-if = "result.is_active == 0">
+									<span>
+										<img src="./images/offline.png" alt="Cannot broadcast" />
+									</span>
+								</td>
+								<td ng-if = "result.status == 1">
+									<span>
+										<img src="./images/available.png" alt="Can broadcast" />
+									</span>
+								</td>
+								<td ng-if = "result.status == 0">
+									<span>
+										<img src="./images/offline.png" alt="Cannot broadcast" />
+									</span>
+								</td>
+					      	</tr>
+					      	{% endraw %}
+					    </tbody>
+					    <tbody ng-hide = "show" id = "swig">
+					      {% for result in results %}
+					      <tr>
+					      	<td><input type="checkbox" name = "checkBox[]" class = "user_select" value = "{{ result.user_id }}"></td>				      	
+					      	<td>
+					      		<a href="#">
+					      			{% if result.is_active == 1 %}
+							      		<div ng-click="toggleModal('{{result.user_id}}')" data-toggle="modal" data-target="#myModal">
+							      			{{ result.first_name+' '+result.last_name }}
+							      		</div>
+						      		{% else %}
+							      		<div ng-click="toggleModal('{{result.user_id}}')" data-toggle="modal" data-target="#myModal">
+							      			{{ result.first_name+' '+result.last_name }}
+							      		</div>
+						      		{% endif %}
+					      		</a>
+					      	</td>
+					      	<td>
+					      		{% if result.can_broadcast == 1 %}
+					      			<span><img src="./images/available.png" alt="Can broadcast" /></span>
+					      		{% else %}
+					      			<span><img src="./images/offline.png" alt="Cannot broadcast" /></span>
+					      		{% endif %}
+					      	</td>
+							<td>
+					      		{% if result.is_active == 1 %}
+					      			<span><img src="./images/available.png" alt="is Active" /></span>
+					      		{% else %}
+					      			<span><img src="./images/offline.png" alt="not active" /></span>
+					      		{% endif %}
+							</td>
+					      	<td>
+					      		{% if result.status == 1 %}
+					      			<span><img src="./images/available.png" alt="available" /></span>
+					      		{% else %}
+					      			<span><img src="./images/offline.png" alt="offline" /></span>
+					      		{% endif %}
+					      	</td>
+					      	</tr>
+					      	{% endfor %}
+					    </tbody>
+					  <tfoot>
+					   
+					  </tfoot>
+					</table>
+				</div>
+
+
+				<!--bootstrap modal starts-->
+				 <form action = "/usermanagement/updateuser" method = "post" role="form">
+				<div class="container">
+				   <!-- Modal -->
+				  <div class="modal fade" id="myModal" role="dialog">
+				    <div class="modal-dialog">
+				    
+				      <!-- Modal content-->
+				      <div class="modal-content">
+				        <div class="modal-header">
+				          <button type="button" class="close" data-dismiss="modal">&times;</button>
+				          <h4 class="modal-title">Edit</h4>
+				        </div>
+				        <div class="modal-body">
+								<div class="form-group">
+									<label for="name">First Name</label>
+									<input type="text" class="form-control" required name = "first_name" ng-model = "edit_user.first_name" id="firstname"/>
+								</div>
+								<div class="form-group">
+									<label for="name">Last Name</label>
+									<input type="text" class="form-control" required name = "last_name" ng-model = "edit_user.last_name" id="lastname"/>
+								</div>
+								<div class="form-group">
+									<label for="imei">IMEI</label>
+									<input type="text" class="form-control" name = "imei_number" id="imei" ng-model = "edit_user.imei_number"/>
+								</div>
+								<div class="form-group">
+									<label for="jid">TGi</label>
+									<input type="text" class="form-control" readonly id="user_id" name = "user_id" ng-model = "edit_user.user_id"/>
+								</div>
+								<div class="form-group">
+									<label for="jid">JID</label>
+									<input type="text" class="form-control" readonly id="jid" name = "jid" ng-model = "edit_user.jid"/>
+								</div>
+								<div class="form-group">
+									<label for="email">Email</label>
+									<input type="email" class="form-control" required id="email" name = "mail" ng-model = "edit_user.mail" placeholder="Enter email"/>
+								</div>
+								<div class="form-group">
+									<label for="mobile">Mobile No.</label>
+									<input  type="text" maxlength = "14" class="form-control text-input" required id="mobile" onblur="ValidateNumber();" name = "mobile" ng-model = "edit_user.mobile"/>
+								</div>
+								<button type="submit" class="btn btn-default" id = "edit_user_data">Submit</button>
+				        </div>
+				        <div class="modal-footer">
+				          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				</form>
+				<!--bootstrap modal ends-->
+
+				<!--Modalpopup ends-->
+
+			    <form action = "/usermanagement/adduser" method = "post" role="form">
+				<div class="container">
+				   <!-- Modal -->
+				  <div class="modal fade" id="myModalAdd" role="dialog">
+				    <div class="modal-dialog">
+				    
+				      <!-- Modal content-->
+				      <div class="modal-content">
+				        <div class="modal-header">
+				          <button type="button" class="close" data-dismiss="modal">&times;</button>
+				          <h4 class="modal-title">Add</h4>
+				        </div>
+				        <div class="modal-body">
+								<div class="form-group">
+									<label for="name">First Name</label>
+									<input type="text" class="form-control" required name = "first_name" ng-model = "add_user.first_name" id="firstname" />
+								</div>
+								<div class="form-group">
+									<label for="name">Last Name</label>
+									<input type="text" class="form-control" required name = "last_name" ng-model = "add_user.last_name" id="lastname" />
+								</div>
+								<div class="form-group">
+									<label for="imei">IMEI</label>
+									<input type="number" class="form-control" required name = "imei_number" id="imei_number" ng-model = "add_user.imei_number" />
+								</div>
+								<div class="form-group">
+									<label for="imei">TGi</label>
+									<input type="text" style="text-transform: lowercase;" class="form-control" required onkeyup="sync('{{domain}}')" name = "user_id" id="n1" ng-model = "add_user.tgi" />
+								</div>
+								<div class="form-group">
+									<label for="jid">JID</label>
+									<input type="text" class="form-control" style="text-transform: lowercase;" readonly id="n2" name = "jid" ng-model = "add_user.jid" />
+								</div>
+								<div class="form-group">
+									<label for="email">Email</label>
+									<input type="email" class="form-control" required id="email" name = "mail" ng-model = "add_user.mail" placeholder="Enter email" />
+								</div>
+								<div class="form-group">
+									<label for="mobile">Mobile No.</label>
+									<input  type="text" maxlength = "14" onblur="ValidatePhNumber();" class="form-control text-input" required id="mobile1" name = "mobile" ng-model = "add_user.mobile" />
+								</div>
+								<button type="submit" class="btn btn-default" id = "add_user_data">Submit</button>
+				        </div>
+				        <div class="modal-footer">
+				          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+	</form><!-- 
+	<form action = "/usermanagement/editImeiNumber" method = "post" role="form">
+				<div class="container">
+				  <div class="modal fade" id="edit_imei_number_modal" role="dialog">
+				    <div class="modal-dialog">
+				    
+				      <div class="modal-content">
+				        <div class="modal-header">
+				          <button type="button" class="close" data-dismiss="modal">&times;</button>
+				          <h4 class="modal-title">Edit imei number</h4>
+				        </div>
+				        <div class="modal-body">
+	
+						    	<input type="hidden" name = "user_old_jid" id="user_old_jid" />
+								
+								<div class="form-group">
+									<label for="imei">IMEI</label>
+									<input type="number" class="form-control" required onkeyup="sync1()" name = "imei_number" id="edit_imei_n1" ng-model = "add_user.imei_number" />
+								</div>
+								<div class="form-group">
+									<label for="jid">JID</label>
+									<input type="text" class="form-control" readonly id="edit_imei_n2" name = "jid" ng-model = "add_user.jid" />
+								</div>
+								<button type="submit" class="btn btn-default" id = "edit_imei">Submit</button>
+				        </div>
+				        <div class="modal-footer">
+				          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+	</form> -->
+				<div class="user-pagination">
+					<ul class="pagination pull-right">
+						<li><a href="?offset={{ pagination.prev }}">&laquo;</a></li>
+						{% for page in pagination.pages %}
+							<li><a href="?offset={{page*10}}">{{page+1}}</a></li>
+						{% endfor %}
+						<li><a href="?offset={{ pagination.next }}">&raquo;</a></li>
+					</ul>
+				</div>
+
+			</div>
+	    </div>
+    </div>
+{% endblock %}

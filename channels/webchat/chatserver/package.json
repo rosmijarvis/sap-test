@@ -1,0 +1,18 @@
+{
+  "name": "chatserver",
+  "version": "0.0.0",
+  "description": "",
+  "main": "chatServerStudio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "binaryjs": "^0.2.1",
+    "moment": "^2.15.0",
+    "moments": "0.0.2",
+    "properties-reader": "0.0.15",
+    "winston": "^2.2.0"
+  }
+}

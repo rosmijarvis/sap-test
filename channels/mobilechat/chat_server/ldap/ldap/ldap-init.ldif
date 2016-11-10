@@ -1,0 +1,6 @@
+dn: dc=lnt,dc=com
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+dc: lnt
+o: Thales

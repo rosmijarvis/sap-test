@@ -1,0 +1,273 @@
+body
+{   
+ 	width: 100%;
+    margin: 0 auto;
+    height: auto;
+    background: #fff;
+    overflow-x: auto; 
+}
+.padding-zero{
+	padding:0;
+}
+.menubar{
+	margin-bottom:0px;
+}
+/*.content{
+	background: #F5F5F5;
+	/*height: auto;*/
+}*/
+table thead tr{
+	background: #333;
+	color:white;
+}
+table{
+	background-color: white;
+	margin-top:20px;
+}
+.table-responsive{
+	border:none;
+}
+
+/*login code starts*/
+#login_page form{
+	border:1px solid #333;
+	padding:20px 50px;
+	position: absolute;
+    float: left;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top:150px;
+}
+#login_page .signin-btn{
+	text-align: center;
+	margin-bottom: 0px;
+}
+/*login code ends*/
+/*dashboard config page code starts*/
+
+#dashboardconfig_page .dashboard-content{
+	margin:30px;
+}
+#dashboardconfig_page .dashboard-content .row{
+	padding-bottom:15px;
+}
+
+/*dashboard config page code ends*/
+
+
+/*configuration page code*/
+
+legend a {
+  color: inherit;
+}
+legend.legendStyle {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+fieldset.fsStyle {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: small;
+	font-weight: normal;
+	border: 1px solid #999999;
+	padding: 15px;
+	margin-top: 30px;
+}
+fieldset .row,.otp-block .row{
+	padding-bottom:15px;
+}
+
+legend.legendStyle {
+	font-size: 15px;
+	color: #337ab7;
+	background-color: transparent;
+	font-weight: bold;
+}
+
+legend {
+	width: auto;
+	border-bottom: 0px;
+}
+.submit-btn{
+	text-align: center;
+	margin-top: 60px;
+}
+.otp-block
+{
+	margin-top:80px;
+}
+/*configuration page code*/
+
+
+/*usermanagement page code start*/
+
+/*
+#usermanagement_page .search-field{
+	width:300px;
+	display: inline;
+	position: absolute;
+}*/
+#usermanagement_page .go-btn{
+	left:253px;
+}
+#usermanagement_page .contactlist {
+	display:none;
+	position: absolute;
+    top: 125px;
+    z-index: 999;
+}
+
+#usermanagement_page table th,#usermanagement_page table td {
+	text-transform: none;
+    font-size: 14px;
+    text-align: center;
+    padding:12px;
+}
+
+.contactusers{
+	background:white;width:300px; 
+	height:auto;
+	list-style:none;
+	margin:0px;
+	padding:0px
+}
+.contactusers li{
+	border-bottom:1px solid gray;
+}
+.checkbox{
+	padding:10px;
+}
+.delete-btn{
+	padding-right: 15px;
+}
+.pagination>li>a
+{
+	color:#fff;
+}
+#usermanagement_page label{
+	padding-top: 5px;
+}
+#usermanagement_page .reports-table{
+	display:none;
+}
+/*usermanagement page code end*/
+
+/*logs page code start*/
+table thead tr{
+	background: #337ab7;
+	color:white;
+}
+table{
+	background-color: white;
+	margin-top:20px;
+}
+/*logs page code start*/
+.onlineusers-panel
+{
+	padding: 0px;
+	margin-top: 20px;
+}
+.onlineusers-panel .panel-default{
+	text-align:center;
+}
+.onlineusers-panel .panel-heading{
+    background: #333;
+    color: white;
+}    
+.groups-table{
+	padding-right:0px;
+}
+.groups-table table{
+	margin-top:20px;
+}
+.groups-table table tbody td{
+	padding: 20px;
+}
+.search-block{
+	padding: 0;
+}
+
+.footer{
+	background:#222;
+	height: 50px;
+	position: fixed;
+	bottom: 0;
+}
+.footer p{	
+	color:#fff;
+	text-align: center;
+	padding-top:15px;
+}
+.group-content{
+	position: relative;
+}
+
+.range-labels input
+{
+    height: 33px;
+}
+.otp-panel{
+	border:1px solid #337ab7;
+	padding: 12px;
+}
+.otp-panel label
+{
+	    padding-top: 6px;
+}
+.print{
+	margin-top: 20px;
+}
+
+
+.table-to-hide{
+	display: none;
+}
+textarea{
+	text-align: justify;
+        white-space: normal;
+}
+.user-pagination{
+	    margin-bottom: 150px;
+}
+.content-box-gray .content {
+    overflow: hidden;
+    padding: 10px;
+    font-size: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid gray;
+    color: #3385FF;
+}
+.content-box-gray .title {
+    height:30px;
+    line-height:30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background:gray;
+    font-size:18px;
+    font-weight:bold;
+    font-family:verdana;
+    display:block;
+    color:white;
+    display:block;
+    padding:10px;
+    border: 1px solid gray;
+    border-bottom:none;
+}
+.btn-default a {
+	color: #fff;
+}
+.legend {
+	font-size: 11px;
+    width: 500px;
+}
+.bulk_users {
+	width: 150px;
+}
+.note-red {
+    color: #f00;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}

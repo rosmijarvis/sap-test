@@ -1,0 +1,70 @@
+attributetype ( 1.1.2.1.1
+	NAME 'otp'
+	DESC 'OTP used for registration'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{128}
+	SINGLE-VALUE )
+
+attributetype ( 1.1.2.1.2
+	NAME 'otpcreateddate'
+	DESC 'OTP date used for registration'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{128}
+	SINGLE-VALUE )
+
+attributetype ( 1.1.2.1.3
+	NAME 'deviceimei'
+	DESC 'Device IMEI used for registration'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{128}
+	SINGLE-VALUE )
+
+attributetype ( 1.1.2.1.4
+	NAME 'passwordcreateddtime'
+	DESC 'Pasword created date and time'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{128}
+	SINGLE-VALUE )
+
+attributetype ( 1.1.2.1.5
+	NAME 'isactive'
+	DESC 'Is the user active'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{128}
+	SINGLE-VALUE )
+
+attributetype ( 1.1.2.1.6
+	NAME 'lastlogindtime'
+	DESC 'Last login time'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{128}
+	SINGLE-VALUE )
+
+attributetype ( 1.1.2.1.7
+	NAME 'loginfailedattempts'
+	DESC 'Number of failed attempts at login'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{128}
+	SINGLE-VALUE )
+
+attributetype ( 1.1.2.1.8
+	NAME 'firstloginattemptdtime'
+	DESC 'First login attempt date and time'
+	EQUALITY caseIgnoreMatch
+	SUBSTR caseIgnoreSubstringsMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{128}
+	SINGLE-VALUE )
+
+objectclass ( 1.1.2.2.2 NAME 'devicedetails'
+        DESC 'Holds custom attributes such as OTP and device IMEI number'
+	MAY ( otp $ otpcreateddate $ deviceimei $ passwordcreateddtime $ isactive $ lastlogindtime $ loginfailedattempts $ firstloginattemptdtime )
+	SUP inetOrgPerson )
+
+

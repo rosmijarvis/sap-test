@@ -1,0 +1,56 @@
+<iq id='8592p-14' type='error'><error type='modify'>
+
+<gone xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'>
+
+Incorrect OTP
+
+</gone>
+
+<text xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'>
+
+Incorrect OTP
+
+</text>
+
+</error>
+
+</iq>
+
+
+<failure xmlns="urn:ietf:params:xml:ns:xmpp-sasl">
+
+<MODIFY/><text>Password Expired</text></failure><success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/><success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+
+
+SELECT g.group_name,g.group_jid from group_table as g JOIN group_user_table as gu ON g.group_jid = gu.group_id where gu.user_id = '00000003@52.27.0.146' GROUP BY g.group_name;
+
+SELECT m.from_user, m.to_user,u.first_name,u.last_name,g.group_name FROM message as m LEFT JOIN users as u ON (u.jid = m.to_user OR u.jid = m.from_user) AND u.jid <> '80508051@52.27.0.146' JOIN group_table as g JOIN group_user_table as gu ON g.group_jid = gu.group_id WHERE gu.user_id = '00000003@52.27.0.146' OR m.from_user = '80508051@52.27.0.146' OR m.to_user = '80508051@52.27.0.146' GROUP BY u.first_name, g.group_name;
+
+
+SELECT m.from_user, m.to_user,u.first_name,u.last_name FROM message as m JOIN users as u ON (u.jid = m.to_user OR u.jid = m.from_user) AND u.jid <>  '80508053@52.27.0.146' WHERE m.from_user = '80508053@52.27.0.146' OR m.to_user = '80508053@52.27.0.146' GROUP BY u.first_name;
+
+
+
+<iq to='203.101.96.53' id='uNzD3-15' type='get'>
+	<creategroupIQ xmlns='urn:xmpp:CreateGroup'>
+		<groupDetails>
+			{&quot;group_name&quot;:&quot;gr2&quot;,&quot;group_jid&quot;:&quot;115@203.101.96.53&quot;,&quot;group_participaintJID&quot;:&quot;80508053&quot;}
+		</groupDetails>
+		<action_type>
+			ExitParticipantFromGroup
+		</action_type>
+		<response></response>
+	</creategroupIQ>
+</iq>
+
+
+ <iq id='uNzD3-15' " type="get">
+ 	<creategroupIQ xmlns="urn:xmpp:CreateGroup">
+ 		<groupDetails></groupDetails>
+ 		<action_type>ExitParticipantFromGroup</action_type>
+ 		<response>
+ 			{"status":"true","error":"","message":"Exit successful","GroupParticipant":[{"user_id":"80508052","user_status":"0","is_active":"0","user_type":"0","can_broadcast":"0","first_name":"FabriceBeau","last_name":"Thales","mail":"fg.demodevice1@gmail.com","mobile":"8050832802","imei_number":"80508052","jid":"80508052@203.101.96.53"}]}
+ 		</response>
+ 	</creategroupIQ>
+ </iq>
+

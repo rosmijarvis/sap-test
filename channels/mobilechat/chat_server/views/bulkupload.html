@@ -1,0 +1,18 @@
+
+{% extends 'layout.html' %}
+
+
+{% block content %}
+	{% if message != '' %}
+		<div class = "alert-danger alert">
+			{{message}}
+		</div>
+	{% endif %}
+	<form action = "/changepasswordpost" method="POST">
+		<div class="content" id="configuration_page">
+	    	<div class="container">
+				{{results}}
+			</div>
+		</div>
+	</form>
+{% endblock %}

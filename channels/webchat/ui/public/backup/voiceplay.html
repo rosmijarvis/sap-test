@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><title>Stream to Wav</title></head>
+<body>
+<audio id="audio">
+    <source src="demo5.wav" type="audio/wav" />
+</audio>
+
+<button id='button'>Start Playing</button>
+
+<script>
+
+var button = document.getElementById('button');
+var audio = document.getElementById('audio');
+
+var onClick = function() {
+    audio.play(); // audio will load and then play
+};
+
+button.addEventListener('click', onClick, false);
+
+</script>
+</body>
+</html>

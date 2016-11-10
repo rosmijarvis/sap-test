@@ -1,0 +1,164 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+   
+  	<div ng-app="usermgmt" ng-controller="userctrl" class="content col-xs-12" id="usermanagement_page">
+	  	<form action="/email/updateEmailContent" method="post" role="form">
+	  		<br />
+	  		<br />
+	  		<div class="col-md-12">
+				<div class="col-sm-4 col-md-6 form-group padding-zero">
+					<label for="sel1" class="col-md-4">Email Templates:</label>
+					<div>
+						<div class="col-xs-7 col-sm-6 col-md-6">
+							<select class="form-control" id="email_templates">
+							<option value="" disabled selected>Select your option</option>
+								<option value="alert-email">Alert</option>
+								<option value="user-registration">New User Registration</option>
+								<option value="password-recovery">Password Recovery OTP</option>
+								<option value="change-mobilenumb">Change Mobile No.OTP</option>
+							</select>
+					    </div>
+				    </div>
+		      	</div>
+			</div>
+		    <div class="container" id = "email_contain" style="display:none;padding-top:40px;">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<div class="table-to-hide alert-email container" id="alert-email-table">
+						<div class="form-group">
+							<label class = "show">Email Content</label>
+							<div>
+								<textarea rows="12" cols="120" id="emailCnt" name="alert_email_content" onfocus="testEmail(this.id,this.name);">
+									{{ result.alert_email_content }}
+								</textarea>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<div class="table-to-hide user-registration container" id="user-registration-table">
+						<div class="form-horizontal col-sm-9 col-md-6">
+							<!-- <div class="form-group">
+								<label for="inputName3" class="col-sm-6 col-md-6 col-lg-6 control-label">Recepient</label>
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<input type="text" class="form-control" name = "user_name" id="inputName3" disabled="true" placeholder="<<firstname>>">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputPassword3" class="col-sm-6 col-md-6 col-lg-6 control-label">Generation Date of Enrollment</label>
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<input type="date" class="form-control" name = "password" id="inputPassword3">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputName3" class="col-sm-6 col-md-6 col-lg-6 control-label">Enrollment Expiration</label>
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<input type="date" class="form-control" name = "user_name" id="inputName3">
+								</div>
+							</div> -->
+							<div class="form-group">
+								<label  class = "show">Email Content</label>
+								<div>
+									<textarea rows="12" cols="120" id="regEmail" name="user_regstrn_email_content" onfocus="testEmail(this.id,this.name);">
+										{{ result.user_regstrn_email_content }}
+									</textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<div class="table-to-hide password-recovery" id="password-recovery-table">
+						<div class="form-horizontal col-sm-9 col-md-6">
+							<!-- <div class="form-group">
+								<label for="inputName3" class="col-sm-6 col-md-6 col-lg-6 control-label">First Name</label>
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<input type="text" class="form-control" name = "user_name" id="inputName3" disabled="true" placeholder="<<first-name>>">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputPassword3" class="col-sm-6 col-md-6 col-lg-6 control-label">Last Name</label>
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<input type="text" class="form-control" name = "password" id="inputPassword3" disabled="true" placeholder="<<last-name>>">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputPassword3" class="col-sm-6 col-md-6 col-lg-6 control-label">Generation Date of Enrollment</label>
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<input type="date" class="form-control" name = "password" id="inputPassword3">
+								</div>	
+							</div>
+							<div class="form-group">
+								<label for="inputName3" class="col-sm-6 col-md-6 col-lg-6 control-label">Enrollment Expiration</label>
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<input type="date" class="form-control" name = "user_name" id="inputName3">
+								</div>
+							</div> -->
+							<div class="form-group">
+								<label class = "show">Email Content</label>
+								<div>
+									<textarea rows="12" cols="120" id="otpCnt" name="pswd_recovery_otp_content" onfocus="testEmail(this.id,this.name);">
+										{{ result.pswd_recovery_otp_content }}
+									</textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<div class="table-to-hide change-mobilenumb" id="change-mobilenumb-table">
+						<div class="form-horizontal col-sm-9 col-md-6">
+							<!-- <div class="form-group">
+								<label for="inputName3" class="col-sm-6 col-md-6 col-lg-6 control-label">First Name</label>
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<input type="text" class="form-control" name = "user_name" id="inputName3" disabled="true" placeholder="<<first-name>>">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputPassword3" class="col-sm-6 col-md-6 col-lg-6 control-label">Last Name</label>
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<input type="text" class="form-control" name = "password" id="inputPassword3" disabled="true" placeholder="<<last-name>>">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputPassword3" class="col-sm-6 col-md-6 col-lg-6 control-label">Generation Date of Enrollment</label>
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<input type="date" class="form-control" name = "password" id="inputPassword3">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputName3" class="col-sm-6 col-md-6 col-lg-6 control-label">Enrollment Expiration</label>
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<input type="date" class="form-control" name = "user_name" id="inputName3">
+								</div>
+							</div> -->
+							<div class="form-group">
+								<label class = "show">Email Content</label>
+								<div>
+									<textarea rows="12" cols="120" id="mobileCnt" onfocus="testEmail(this.id,this.name);" name="mobileno_change_content">
+										{{ result.mobileno_change_content }}
+									</textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			    <div class="col-xs-5 col-sm-3 col-md-2">
+					<button type="submit" onclick="return valEmpty();" class="btn btn-default">Submit</button>
+				</div>
+				<div class="form-group col-sm-6 col-md-5 otp-panel legend">
+					<div class="col-md-6 col-lg-6">
+						&lt;first-name&gt;: Firstname <br />  
+						&lt;last-name&gt;: Lastname <br />
+						&lt;otp-code&gt;: The otp generated <br />
+						&lt;date-of-enrollment&gt;: Date of enrollment <br />
+						&lt;date-of-expiry&gt;: Date of expiry <br />
+						&lt;mobile&gt;: Mobile number <br />
+						&lt;imei&gt;: Imei number
+				    </div>
+			    </div>
+			</div>
+		</form>	
+    </div>
+{% endblock %}

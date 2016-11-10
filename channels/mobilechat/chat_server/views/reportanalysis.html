@@ -1,0 +1,286 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+   
+  	<div ng-app="usermgmt" ng-controller="userctrl" class="content col-xs-12" id="usermanagement_page">
+	    <div class="container" style="padding-top:40px;">
+		    <div class="col-md-12">
+					<div class="col-sm-4 col-md-4 form-group padding-zero">
+						<label for="sel1" class="col-md-4">Report Type:</label>
+						<div class="col-md-8">
+							<select ng-model="report_type" class="form-control" id="report_type">
+								<option disabled value="">Select the Report</option>
+								<option value="1">Exchanged-Messages-Report</option>
+                                <option value="2">Connected-Users-Report</option>
+                                <option value="3">Pending-Messages-Report</option>
+                                <option value="4">No-of-Messages-Sent-Report</option>
+                            </select>
+					     </div>
+			      	</div>
+					<div class="col-sm-4 col-md-3 range-labels">
+						<div class="col-md-3">
+							<label for="from" class="labelStyle">From:</label>
+						</div>
+						<div class="col-md-9">
+							<div id="sandbox-container">
+							    <input type="text" id = "from_date" type="text" class="form-control" />
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3 range-labels">
+						<div class="col-md-3">
+							<label for="to" class="labelStyle">To:</label>
+						</div>
+						<div class="col-md-9">
+							<div id="sandbox-container">
+							    <input type="text" id = "to_date" type="text" class="form-control" />
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-md-2">
+						<button type="button" ng-click = "generate_report()" class="btn btn-default">Generate Report</button>
+					</div>
+			</div>
+			<!-- <div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="table-responsive table-to-hide exchanged-msgs" id="exchanged-msgs-table">
+					<table class="table table-bordered table-hover" id="a">
+					  <thead>
+					      <tr>
+					      	
+					        <th>Pending Delivery Messages</th>
+					        <th>Received Messages</th>
+					        <th>Total Messages Count</th>
+					      </tr>
+					    </thead>
+					    <tbody id = "angular" ng-show = "show">
+					    {% raw %}
+					      <tr ng-repeat="result in results">				      	
+					     
+					      	<td>{{ result.pending_delivery_messages }}</td>
+					      	<td>{{ result.received_messages }}</td>
+					      	<td>{{ result.total_messages_count }}</td>
+					      </tr>
+					    {% endraw %}
+					    </tbody>
+					    <tbody ng-hide = "show" id = "swig">
+					    {% for result in results %}
+					      <tr>				      	
+					      
+					      	<td>{{ result.pending_delivery_messages }}</td>
+					      	<td>{{ result.received_messages }}</td>
+					      	<td>{{ result.total_messages_count }}</td>
+					      </tr>
+					    {% endfor %}
+					    </tbody>
+					  <tfoot>
+					   
+					  </tfoot>
+					</table>
+					<div class="col-md-8 print">
+						<button type="button" class="btn btn-default"><a href="#" class="print printbtn1" role='button'>Print</a>
+						</button>
+						<button type="button" class="btn btn-default"><a href="#" class="export exportbtn1" role='button'>Export to CSV</a>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="table-responsive table-to-hide connected-users" id="connected-users-table">
+					<table class="table table-bordered table-hover" id="b">
+					<thead>
+					      <tr>
+
+					      	<th>Generated Time</th>
+					        <th>Connected Users</th>
+					      </tr>
+					      </thead>
+					      <tr>				      	
+					      	<td>1:00pm</td>
+					      	<td>12</td>
+					      </tr>
+					</table>
+					<div class="col-md-8 print">
+						<button type="button" class="btn btn-default"><a href="#" class="print printbtn2" role='button'>Print</a>
+						</button>
+						<button type="button" class="btn btn-default"><a href="#" class="export exportbtn2" role='button'>Export to CSV</a>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="table-responsive table-to-hide pending-deliverymsg" id="pending-msg-table">
+					<table class="table table-bordered table-hover" id="c">
+					  <thead>
+					      <tr>
+					        <th>Full Name</th>
+					        <th>Pending Delivery Messages</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					      {% raw %}
+					    	<tr ng-repeat="result in results">				      	
+								<td>{{result.first_name}} {{result.last_name}}</td>
+								<td>{{result.count}}</td>
+							</tr>
+							{% endraw %}
+					    </tbody>
+					  <tfoot>
+					   
+					  </tfoot>
+					</table>
+					<div class="col-md-8 print">
+						<button type="button" class="btn btn-default"><a href="#" class="print printbtn3" role='button'>Print</a>
+						</button>
+						<button type="button" class="btn btn-default"><a href="#" class="export exportbtn3" role='button'>Export to CSV</a>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div class="table-responsive table-to-hide noof-msgssent" id="noof-msgssent-table">
+
+					<table class="table table-bordered table-hover" id="d">
+					  <thead>
+					      <tr>
+					        <th>Full Name</th>
+					        <th>No.of Messages Sent</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					    	{% raw %}
+					    	<tr ng-repeat="result in results">				      	
+								<td>{{result.first_name}} {{result.last_name}}</td>
+								<td>{{result.count}}</td>
+							</tr>
+							{% endraw %}
+					    </tbody>
+					</table>
+					<div class="col-md-8 print">
+						<button type="button" class="btn btn-default"><a href="#" class="print printbtn4" role='button'>Print</a>
+						</button>
+						<button type="button" class="btn btn-default"><a href="#" class="export exportbtn4" role='button'>Export to CSV</a>
+						</button>
+					</div>
+					 
+				</div>
+			</div> -->
+			<div class="col-xs-12 col-sm-12 col-md-12" id="noof-msgs-exchanged-table">
+				
+				<div class="table-responsive reports-table" id="report_1">
+					<table class="table table-bordered table-hover">
+					  <thead>
+					      <tr>
+					        <th>Date</th>
+					        <th>No.of Messages</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					    	{% raw %}
+					    	<tr ng-repeat="result in results">				      	
+								<td>{{result.date | date:"dd-MM-yyyy" }}</td>
+								<td>{{result.count}}</td>
+							</tr>
+							{% endraw %}
+					    </tbody>
+					  <tfoot>
+					   
+					  </tfoot>
+					</table>
+					<div class="col-md-8 print">
+						<button type="button" class="btn btn-default"><a href="#" class="print printbtn1" role='button'>Print</a>
+						</button>
+						<button type="button" class="btn btn-default"><a href="#" class="export exportbtn1" role='button'>Export to CSV</a>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-12" id="connected-users-table">
+				<div class="table-responsive reports-table connected-users" id="report_2">
+					<table class="table table-bordered table-hover">
+					  <thead>
+					      <tr>
+					      	<th>Date</th>
+					        <th>Logged in users /Day</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					      {% raw %}
+					    	<tr ng-repeat="result in results">				      	
+								<td>{{result.date | date:"dd-MM-yyyy" }}</td>
+								<td>{{result.name}}</td>
+							</tr>
+							{% endraw %}
+					    </tbody>
+					</table>
+					<div class="col-md-8 print">
+						<button type="button" class="btn btn-default"><a href="#" class="print printbtn2" role='button'>Print</a>
+						</button>
+						<button type="button" class="btn btn-default"><a href="#" class="export exportbtn2" role='button'>Export to CSV</a>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12" id="pending-msg-table"> 
+				<div class="table-responsive reports-table pending-deliverymsg" id="report_3">
+					<table class="table table-bordered table-hover">
+					  <thead>
+					      <tr>
+					        <th>Full Name</th>
+					        <th>Pending Delivery Messages</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					      {% raw %}
+					    	<tr ng-repeat="result in results">				      	
+								<td>{{result.first_name}} {{result.last_name}}</td>
+								<td>{{result.count}}</td>
+							</tr>
+							{% endraw %}
+					    </tbody>
+					  <tfoot>
+					   
+					  </tfoot>
+					</table>
+					<div class="col-md-8 print">
+						<button type="button" class="btn btn-default"><a href="#" class="print printbtn3" role='button'>Print</a>
+						</button>
+						<button type="button" class="btn btn-default"><a href="#" class="export exportbtn3" role='button'>Export to CSV</a>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12" id="noof-msgssent-table">
+				
+				<div class="table-responsive reports-table" id="report_4">
+					<table class="table table-bordered table-hover">
+					  <thead>
+					      <tr>
+					        <th>Full Name</th>
+					        <th>No.of Messages Sent</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					    	{% raw %}
+					    	<tr ng-repeat="result in results">				      	
+								<td>{{result.first_name}} {{result.last_name}}</td>
+								<td>{{result.count}}</td>
+							</tr>
+							{% endraw %}
+					    </tbody>
+					  <tfoot>
+					   
+					  </tfoot>
+					</table>
+					<div class="col-md-8 print">
+						<button type="button" class="btn btn-default"><a href="#" class="print printbtn4" role='button'>Print</a>
+						</button>
+						<button type="button" class="btn btn-default"><a href="#" class="export exportbtn4" role='button'>Export to CSV</a>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+{% endblock %}

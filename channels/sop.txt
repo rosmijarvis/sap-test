@@ -1,0 +1,30 @@
+
+
+# Standard operating procedures to start the chat server
+# Text mode secure
+
+1. Navigate to channels\webchat\chatserver
+2. Enter in the command prompt node chatServerStudio.js secure text
+
+ # Text mode non-secure
+
+1. Navigate to channels\webchat\chatserver
+2. Enter in the command prompt node chatServerStudio.js non-secure text
+
+
+ # Voice mode non-secure
+
+1. Navigate to channels\webchat\chatserver
+2. Enter in the command prompt node chatServerVoiceStudio.js secure voice
+ 
+
+# Standard operating procedures to start the UI instance 
+
+# non secure mode
+1. Navigate to \channels\webchat\ui
+2. node serverStudio.js non-secure
+
+# Secure mode
+
+1. Navigate to \channels\webchat\ui
+2. node serverStudio.js secure

@@ -1,0 +1,4 @@
+1) After Roster is sent - Group not differentiated from users
+2) Group info not avaible - issue from 1
+3) Sometimes stuck in create group
+4) After inactivity, sending message in group - sends message as "chat" instead of "groupchat"
