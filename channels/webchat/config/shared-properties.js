@@ -1,23 +1,23 @@
 # Share properties
 [appServer]
 webBotSocketIP=localhost
-webBotSocketPort=7055
+webBotSocketPort=7065
 
 webBotSocketVoiceIP=localhost
-webBotSocketVoicePort=7055 
+webBotSocketVoicePort=7065 
 # 8087
 
 
 # webSocketIP=127.0.0.1
 webSocketIP=localhost
-webSocketPort=7054
+webSocketPort=7064
 
 webSocketVoiceIP=localhost
-webSocketVoicePort=7056
+webSocketVoicePort=7066
 
 # uiSocketIP=127.0.0.1
 uiSocketIP=localhost
-uiSocketPort=7053
+uiSocketPort=7063
 
 channels=1
 sampleRate=44100
