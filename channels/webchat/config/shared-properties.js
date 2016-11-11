@@ -17,7 +17,7 @@ webSocketVoicePort=7066
 
 # uiSocketIP=127.0.0.1
 uiSocketIP=localhost
-uiSocketPort=8080
+uiSocketPort=80
 
 channels=1
 sampleRate=44100
