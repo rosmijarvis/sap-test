@@ -1,0 +1,235 @@
+.Page
+{
+        padding 1em;
+ 	   
+    
+}	
+	
+.Form
+{       padding-left: 1em;
+    padding-right: 1em;
+    border: 1px solid #D3D3D3;
+    background-color: #eeeeee;
+}	
+		
+.bar  
+{
+    width: 100%;
+    background-color: #bdbdbd;
+    color: #034073;
+    font-family: Segoe UI,semibold;
+   
+}	
+.bar1
+{
+    width: 100%;
+    background-color:#bdbdbd; 
+
+
+}	
+	
+.basicinfo
+{
+    margin-left: 8em;
+}
+	
+.projectschedule
+{
+    margin-left: 6.5em;
+}
+	
+table td
+{
+	padding: 2px;
+    	font-size: 13px;
+    	font-family: Segoe UI,semibold;
+
+}
+	
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+.abovebar
+{
+    padding-top: 10px;
+
+    padding-bottom: 10px;
+}
+	
+
+.red
+{
+color:red;
+}
+
+.area
+{
+padding:1em;
+}
+
+accordion,.accordion {
+	
+	width: auto;
+	margin: 10px auto 10px auto;
+	text-align: left;
+	
+	background-clip: padding-box;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box
+}
+
+
+accordion label,.accordion label {
+	padding: 1px;
+	position: relative;
+	z-index: 900;
+	display: block;
+	cursor: pointer;
+	background-color: #A9A9A9;
+    	padding-left: 1em;
+	padding-right: 0.5em;
+}
+
+
+accordion label:hover:after,.accordion label:hover:after {
+	
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	right: 5px;
+	top: 5px
+}
+
+accordion input:checked  ~ article,.accordion input:checked  ~ article {
+	height: auto
+}
+
+
+
+
+
+
+
+accordion input:checked label:hover:after,.accordion input:checked label:hover:after
+	{
+	
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	right: 5px;
+	top: 5px
+}
+
+
+
+accordion input:checked+label,.accordion input:checked+label {
+	background: #c6e1ec;
+	color:#3d7489;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25)
+}
+
+accordion input:checked+label:hover,.accordion input:checked+label:hover
+	{
+	background:#c6e1ec;
+	color: #3d7489;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25)
+}
+
+
+
+
+accordion article,.accordion article {
+	background:#eeeeee;
+	margin-top: -1px;
+	overflow: hidden;
+	height: 0;
+	position: relative;
+	z-index: 800
+}
+
+
+
+
+/*accordion label:hover:after, .accordion label:hover:after {
+    content: '4';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 5px;
+    top: 5px
+}*/
+
+	
+	
+accordion
+{
+	display : block;
+}	
+
+/* header
+{
+	padding: 1px 0;
+	width: 100%;			
+	z-index:999;
+		   
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:10em;
+	position:fixed;
+	width:100%;
+	-webkit-transition: top 1s;
+	-moz-transition: top 1s;
+	transition: top 1s;	
+	box-sizing: border-box;
+} */	
+footer
+{
+	position:fixed;
+	width:100%;
+	bottom:3em;
+	   overflow:hidden;
+	background-repeat:no-repeat;
+	background-size:cover;
+
+	position:fixed;
+
+	-webkit-transition: bottom 1s;
+	-moz-transition: bottom 1s;
+	transition: bottom 1s;	
+	box-sizing: border-box;
+	display: block;
+
+}
+.Assign td
+{
+padding-left:1em;
+
+}
+.extra
+{
+color:#004dea;
+font-weight: 600;
+ padding-left: 2%;
+}
+.close_button
+{
+  background-color: #A9A9A9;
+  color: white;
+  width: 10%;
+  border-color: #A9A9A9;
+  padding: 0%;
+}
+.form_button
+{
+background-color: #034073;
+ color: white;
+  width: 10%;
+  border-color: #034073;
+  padding: 0%;
+}

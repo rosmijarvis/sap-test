@@ -1,0 +1,193 @@
+.logo
+{
+float:right;
+margin-left:55em;
+}
+.user
+{
+background:url("../imgs/user_icon.png") no-repeat;
+			padding-left:15mm;
+			color:black;
+			border: 1px solid #175fab;
+    background-color: #fff;
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+    color: #383838;
+    font-size: 12px;
+    height: 28px;
+    padding: 4px 4px 4px 37px;
+    width: 288px;
+}
+.key
+{
+background:url("../imgs/key.png") no-repeat;
+			padding-left:15mm;
+			color:black;
+			border: 1px solid #175fab;
+    background-color: #fff;
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+    color: #383838;
+    font-size: 12px;
+    height: 28px;
+    padding: 4px 4px 4px 37px;
+    width: 288px;
+}
+.login-holder
+{
+    margin: 0px auto 0 auto;
+    width: 508px;
+    background-color:white;
+}
+#login-inner {
+    color:black;
+    font-family: Segoe UI, Tahoma;
+    font-size: 13px;
+    line-height: 12px;
+    margin: 0 auto;
+    width: 500px;
+	border:0.2em solid #034073;
+	height:30em;
+	padding:98px;
+	padding-top:6em;
+	
+}
+#login-inner td {
+    padding: 0 0 8px 0;
+}
+.submit-login {
+
+    border: 1px solid #FFF;
+    background-color: #034073;
+    cursor: pointer;
+    height: 37px;
+    width: 290px;
+    font-family: Segoe UI, Tahoma;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+}
+.notregistered {
+    font-family: Segoe UI, Tahoma;
+    font-size: 12px;
+    font-weight: normal;
+    color: #5f93ca;
+    /* margin: auto; */
+    text-align: center;
+}
+.table {
+    background-color: grey;
+    width: 100%;
+}
+#loginbox {
+    font-size: 12px;
+    height: 212px;
+    line-height: 12px;
+    padding-top: 60px;
+    position: relative;
+    width: 100%;
+    margin-top: 53px;
+}
+.image_pos
+{
+    margin-left: 9em;
+    margin-bottom: 2em;
+}
+.menubar
+{
+        z-index: 1000;
+    position: absolute;
+    border: 1px solid grey;
+    left: -71px !important;
+    color: #004dea;
+    min-width: 100px !important;
+    padding: 3px 0px 0px 9px!important;
+    margin: 0px !important;
+    font-size: 12px !important;
+    border-radius: 0px !important;
+    
+}
+.leftMenu{
+
+float:center;
+
+
+}
+.button_cls
+{
+background-color:#034073;
+ Width:176px;
+color:white;
+border:none;
+margin-left:1em;
+}
+.text_color
+{
+color:#FFFFFF!important;
+}
+.name_color
+{
+color:#FFFFFF!important;
+}
+.list{
+float:right;
+}	
+.heading
+{
+margin-left: 2em;
+ font-size: 1.5em;
+ font-family:Segoe UI ;
+}
+b, strong {
+font-weight:500;
+}
+.search_box
+{
+    margin-right: 14em;
+    margin-top: 0.5em;
+    width: 70%;
+}
+ul.nav.navbar-nav >li>a :hover{
+    color:white!important;
+}
+.ui-grid-header-canvas {
+    background-color:#bdbdbd;
+    text-align: left;
+    color:#034073;
+    font-size:13px;
+}
+.amount-cls{
+	  text-align:center;
+
+}
+.id-cls{
+	 color: #004dea;
+}
+.action-cls{
+	overflow:visible;
+	text-align:center;
+	
+}
+.status_cls
+{
+	text-align:center;
+
+}
+.title_cls
+{
+	text-align:left;
+	width:130%;
+	
+}
+.owner_cls
+{
+	text-align:left;
+}
+.ngHeaderText.ng-binding.colt5 {
+    text-align: left!important;
+}
+.ngCellText.col1.colt1.title_cls {
+    width: 159%;
+}
+.date_cls
+{
+text-align:right;	
+	}
