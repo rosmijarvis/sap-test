@@ -29,11 +29,18 @@ class UIServer
 		}
 		else //sharedProperties.get('appServer.uiSocketPort')
 		{
-			var server = app.listen( process.env.port || 8080, function () {
+			fs.readFile('./index.html', function (err, html) {
+  			  if (err) {
+       				 throw err; 
+ 				   }       
+			var server = app.listen( process.env.port || 8080, function (req,res) {
 			var host = server.address().address
 			var port = server.address().port
+			res.write(html);  
+                        res.end();  
 			console.log("UI component listening at http://%s:%s", host, port)
 			})
+		        })
 		}
 			
 	}
