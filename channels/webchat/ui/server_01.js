@@ -27,9 +27,9 @@ class UIServer
 
 			console.log("UI component listening in secure mode at https://%s:%s", host, port)
 		}
-		else
+		else //sharedProperties.get('appServer.uiSocketPort')
 		{
-			var server = app.listen(sharedProperties.get('appServer.uiSocketPort') , function () {
+			var server = app.listen( process.env.port || 80, function () {
 			var host = server.address().address
 			var port = server.address().port
 			console.log("UI component listening at http://%s:%s", host, port)
