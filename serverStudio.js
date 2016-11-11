@@ -1,5 +1,5 @@
 'use strict';
-var UIServer = require('./channels/webchat/ui/server.js').UIServer;
+var UIServer = require('./channels/webchat/ui/server_01.js').UIServer;
 var option='';
 
 process.argv.forEach(function (val, index, array) 
