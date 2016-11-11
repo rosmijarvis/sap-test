@@ -1,0 +1,609 @@
+<!Doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" , initial-scale=1.0>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.11.4.custom.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/customstyle.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/jquery-ui.css" rel="stylesheet">
+<script src="js/jquery.slimscroll.min.js"></script>
+<script src="js/socket.io.js"></script>
+<link rel="stylesheet" href="css/Demo.css">
+
+<!--  Please include the channel specific JS file here-->
+<script src="js/guid.js"></script>
+<script src="config/config.js"></script>
+<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+<!--<script src="js/binaryClient.js"></script>-->
+<!--<script src="js/voiceRecorder.js"></script>-->
+<script src="js/voiceWebSpeechKit.js"></script>
+<script src="js/Demo.js"></script>
+<script src="js/text-channel.js"></script>
+
+<!--
+<!-- 
+<script src="js/binaryClient.js"></script>
+<script src="js/voiceRecorder.js"></script>
+-->
+
+<script>
+  $(function() {
+    var availableTags = [
+  "Images within posts are disappearing after publishing on HR portal",
+      "Images within posts are disappearing after publishing the node",
+      "Images within posts are disappearing after publishing while uploading other content",
+      "Images within posts missing in Manager login",
+      "Images having problem while loading" ,
+      "White screen when submitting a webform",
+      "Cannot edit article page"
+          ];
+    $( "#searchtext" ).autocomplete({
+      source: availableTags ,
+      select: function (event, ui) {
+      }
+    });
+  });
+  
+   $(document).ready(function(){
+  $("#searchButton").click(function(){
+	   if($("#searchtext")[0].value =="White screen when submitting a webform"){
+		  window.location.href = "Drupal_All_2.html";
+	  }else if($("#searchtext")[0].value =="Cannot edit article page"){
+		  window.location.href = "Sharepoint_Collaboration_1.html";
+	  }else{
+		  window.location.href = "Drupal_Publishing_1.html";
+	  }
+  });
+});  
+  
+  
+  
+  </script>
+</head>
+<body class="body-cls" onload='hideOne1()'>
+<div id='two'>
+   <div id='start' onclick='chatWindowMaximize()' style='height:0px;'>
+
+   
+   </div>
+   <div id='chatBox'>
+   <div id='chat'></div>
+   </div>
+  <div id='chatBoxextend'>
+   <div>
+		<div id="inputTextArea">
+			<input type='text' placeholder="Say Something ..." onkeypress='check(event)' id='demo'>
+			<img src='./imgs/microphone-3-24.png' id='record_button' onclick='startVoiceRecording()'></img>
+			<img src='./imgs/play-5-24.png' id='button1' onclick='send_message()'></img>
+		</div>
+		<!--<div id=""><img src="" id='button1' onclick='send_message()'></img></div>-->
+   </div>
+  <!-- button type='button' id='button1' onclick='send_message()'>Send</button> -->
+   </div>
+ </div>
+ <script>
+  var a=1;
+   function chatWindowMaximize(){
+        if(a==1)
+        {
+         $("#start").css({ "width": "350px" , "margin-left": "910px","height":"45px"});
+	    $("#start").html("<table id='chatBoxHeader' border='0'><tr width = '350px' height = '40px'><td><div><img src='./imgs/message.png' height='30px' width='30px'></td></div><td style='vertical-align: top'><div id='changeText'><div id='chat_heading'><font color='white' size='2px'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIVE CHAT :</font><font color='white' size='2px'>&nbsp;&nbsp;&nbsp;Ask Query To The Bot &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><span id='chatWindowMaximize' style='font-size: 25px'>-</b></font></div></td></div></tr></table>");
+	 		  
+	 		  
+          $("html, body").animate({ scrollTop: $(document).height() }, 1200); 
+          $("#start").css("margin-bottom","341px");
+          $("#chatBox").show();
+          $("#chatBoxextend").show();
+          a--;
+        }
+        else if(a==0)
+        {
+           $("#start").html("<img src='./imgs/message.png' height='60px' width='65px' style='margin-bottom: 23px'>");
+           $("#start").css({"width":"0px", "margin-bottom": "21px", "margin-left" : "1250px"});
+           $("#chatBox").hide();
+           $("#chatBoxextend").hide();
+           a++;
+        }
+      }
+ </script>
+	<div class="container conatiner-cls"">
+		<header>
+            <nav class="navbar navbar-default navbar-cls">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <div class="navbar-brand">
+                            <img src="imgs/lt-infotech-logo.png" style="margin-top:10px;height:40px; ">
+
+                        </div>
+                    </div>
+                    <div class="title-cls" style="height:60px;line-height:60px;float:left;">
+                        &nbsp;| <b>d.lite</b> <span>Digital Ticketing Tool</span>
+                    </div>
+                    <div class="pull-right" style="line-height:60px;">
+                        <div class="top_small_links">
+                            <a href="Dashboard.html">Home</a>&nbsp;| FAQ | About us | Contact
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <span>
+                                <i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;Alex Paul
+                            </span>
+                        </div>
+                        <div style="float:left;margin-right:80px;color:#fff;">Help Desk No : <b>1800 659 7533</b></div>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+		<div class="row news-cls">
+			<Marquee  scrolldelay="200"> <b><span class="blink_me">Latest News :</span>&nbsp;</b>Service desk will be down on Sunday
+				24 July between 4.00 PM to 5.00 PM  for maintenance</Marquee>
+		</div>
+		<div class="row homepage_banner" style="margin:0 !important;">
+			<img  onclick='openChat()' src="imgs/JServe2.png"  style="margin-left: 464px;margin-right: auto;margin-top: 215px;height: 134px;">
+		</div>
+
+		<div class="row" style="margin-top: -223px;">
+			<div class="col-md-3">
+				<div class="panel panel-default dashBoardLinkBox" style="width:70%;background-color: #ffffff;margin: 75px 0px 0px 20px; border-radius: inherit;">
+					<div class="panel-heading">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="imgs/ico_engagement.png" class="img-responsive" style="margin:10px;">
+                            </div>
+                            <div class="col-md-9">
+                                <span style="color: #b51c1c; font-size: 15px;font-weight: 600;">Engagement Dashboard</span>
+                            </div>
+                        </div>						
+					</div>
+					<div class="panel-body">
+                        <ul class="dashBoardLinkBoxUL">
+                            <li>Business Goal Alignment</li>
+                            <li>IT Performance</li>
+                            <li>Service Level Performance</li>                            
+                        </ul>						
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="panel panel-default dashBoardLinkBox" style="width:70%;background-color: #ffffff;margin: 75px 0px 0px -70px;border-radius: inherit;">
+					<div class="panel-heading">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="imgs/ico_internal_apps.png" class="img-responsive" style="margin: 10px;">
+                            </div>
+                            <div class="col-md-9" style="line-height:40px;">
+                                <span style="color: #b51c1c; font-size: 15px;font-weight: 600;">Services</span>
+                            </div>
+                        </div>						
+					</div>
+					<div class="panel-body">
+                        <ul class="dashBoardLinkBoxUL">
+                            <li>Service Management</li>
+                            <li>Self Service</li>
+                            <li><a onclick='openChat()'>Jarvis Helpdesk</a></li>                            
+                        </ul>										
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="panel panel-default dashBoardLinkBox" style="width:70%;background-color: #ffffff;margin: 75px 0px 0px 138px;border-radius: inherit;">
+					<div class="panel-heading">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="imgs/ico_custom_apps.png" class="img-responsive" style="margin: 10px;">
+                            </div>
+                            <div class="col-md-9" style="line-height:40px;">
+                                <span style="color: #b51c1c; font-size: 15px;font-weight: 600;">Insights</span>
+                            </div>
+                        </div>						
+					</div>
+					<div class="panel-body">
+                        <ul class="dashBoardLinkBoxUL">
+                            <li>Reports</li>
+                            <li>Internet Health Monitoring</li>
+                            <li>Intranet Health Monitoring</li>
+                        </ul>												
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="panel panel-default dashBoardLinkBox" style="width:70%;background-color: #ffffff;margin: 75px 0px 0px 55px;border-radius: inherit;border:transperent">
+					<div class="panel-heading">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="imgs/ico_mobile_apps.png" class="img-responsive" style="margin:10px;">
+                            </div>
+                            <div class="col-md-9">
+                                <span style="color: #b51c1c; font-size:15px;font-weight: 600;">Knowledge Management</span>
+                            </div>
+                        </div>						
+					</div>
+					<div class="panel-body">
+                        <ul class="dashBoardLinkBoxUL">
+                            <li>KEDB</li>
+                            <li>Knowledge Database</li>
+                            <li>Suggestions</li>
+                            <li>Feedback &amp; Policies</li>                            
+                        </ul>						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row search-cls">
+			<div id="custom-search-input">
+				<div class="input-group col-md-12">
+					<div class="ui-widget">
+						<input type="text" class="  search-query form-control" id="searchtext" />
+					</div>
+					<span class="input-group-btn">
+						<button class="btn btn-danger search-btn-cls" type="button"
+							id="searchButton">
+							<span class="glyphicon glyphicon-search"></span>
+						</button> </span>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" style="text-align: center; margin: 0px;">
+			For Example <b>
+    <span style="font-style: italic;">
+        "I can't Upload
+        pics in Infrane Portal",
+    </span>
+</b>OR<b>
+    "Ticket No :<span style="font-style: italic">Web09234"</span>
+</b>
+		</div>
+        
+        <div class="row">&nbsp;</div>
+
+
+		<!-- Dashboard Content -->
+
+		<div class="container">
+			<div class=col-md-3>
+				<div class="row">
+                    <a href="https://lnt.ltimosaic.com">
+                        <div class="panel panel-default">
+                            <div class="panel-body"
+                                 style="padding: 0 0 0 0; background-color: #4b4b4b">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="imgs/create_new.png" class="img-responsive">
+                                    </div>
+                                    <div class="col-md-8"
+                                         style="margin: 0px 0px 0px -20px; font-size: 22pt; color: #ffffff;">
+                                        <p>Create</p>
+                                        <p>New Ticket</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+				</div>
+
+				<div class="row">
+					<div class="panel panel-default"
+						style="border-color: transparent; border-radius: inherit;">
+						<div class="panel-heading" style="background-color: #efb18f">
+							<div class="row">
+								<div class="col-md-3">
+									<h3 class="open_home_heading_digit">70</h3>
+
+								</div>
+								<div class="col-md-9">
+									<p class="open_home_heading">Total
+										Closed</p>
+									<p class="open_home_heading">Tickets</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="panel-body" style="background-color: #f9dfd1">
+							<div class="row" style="border-bottom: 1px solid #f2b99b;height:60px;">
+								<div class="col-md-9" style="height:100%;line-height:60px;">
+									<p class="total-closed-cls">Self Help</p>
+								</div>
+								<div class="col-md-3" style="height:100%;line-height:60px;">
+									<label class="total_closed_digits">10</label>
+								</div>
+							</div>
+							<div class="row" style="border-bottom: 1px solid #f2b99b;height:60px;">
+								<div class="col-md-9">
+									<p class="total-closed-cls">Smart<br>Workbench</p>
+								</div>
+								<div class="col-md-3" style="height:100%;line-height:60px;">
+									<label class="total_closed_digits">30</label>
+								</div>
+							</div>
+							<div class="row" style="height:60px;">
+								<div class="col-md-9" style="height:100%;line-height:60px;">
+									<p class="total-closed-cls">Deep Analysis</p>
+								</div>
+								<div class="col-md-3" style="height:100%;line-height:60px;">
+									<label class="total_closed_digits">30</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+				<div class="row">
+					<div class="panel ">
+						<div class="panel-body quicklinks"">
+							<h4 >Quick links</h4>
+							<div class="panel-body" style="padding: 0;">
+								<div class="row" style="border-bottom: 1px solid #ddd;">
+									<div class="col-md-6">
+										<div class="col-md-2">
+											<img src="imgs/ico_bullet.png" class="img-responsive"
+												style="max-width: 9px; margin-top: 4px;">
+										</div>
+										<div class="col-md-4">
+											<p style="color: #414141">SelfService</p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="col-md-2">
+											<img src="imgs/ico_bullet.png" class="img-responsive"
+												style="max-width: 9px; margin-top: 4px;">
+										</div>
+										<div class="col-md-4">
+											<p style="color: #414141">Newsletter</p>
+										</div>
+									</div>
+								</div>
+								<div class="row" style="border-bottom: 1px solid #ddd;">
+									<div class="col-md-6">
+										<div class="col-md-2">
+											<img src="imgs/ico_bullet.png" class="img-responsive"
+												style="max-width: 9px; margin-top: 4px;">
+										</div>
+										<div class="col-md-4">
+											<p style="color: #414141">L&TIT</p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="col-md-2">
+											<img src="imgs/ico_bullet.png" class="img-responsive"
+												style="max-width: 9px; margin-top: 4px;">
+										</div>
+										<div class="col-md-4">
+											<p style="color: #414141">ITSecurity</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="col-md-2">
+											<img src="imgs/ico_bullet.png" class="img-responsive"
+												style="max-width: 9px; margin-top: 4px;">
+										</div>
+										<div class="col-md-4">
+											<p style="color: #414141">LiveL&T</p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="col-md-2">
+											<img src="imgs/ico_bullet.png" class="img-responsive"
+												style="max-width: 9px; margin-top: 4px;">
+										</div>
+										<div class="col-md-4">
+											<p style="color: #414141">ITPolicies</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class=col-md-3>               
+                <div class="panel panel-default" style="border-color: transparent; border-radius: inherit;color:#9e802a;background-color:#f9e9ba;">
+                    <div class="panel-heading" style="background-color:#f9e9ba;border-bottom:1px solid #ac9067;">                        
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <h5 style="color: #ac9067;padding-left:6px;"><b><i class="fa fa-align-justify" style="color:#9e802a;"></i>&nbsp;&nbsp;Notice Board</b></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="imgs/ico_noticeboard_pin.png"
+                                     class="img-responsive">
+                            </div>
+                            <div class="col-md-9 noticeboard-cls">
+                                <p>Planned downtime for</p>
+                                <p>following servers</p>
+                                <p>-L&T5845</p>
+                                <p>-L&T58944</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="imgs/ico_noticeboard_pin.png"
+                                     class="img-responsive">
+                            </div>
+                            <div class="col-md-9 noticeboard-cls">
+                                <p>Season on Learning</p>
+                                <p>New Incident System</p>
+                                <p>today</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+				<div class="panel panel-default"
+					style="border-color: transparent; border-radius: inherit;">
+					<div class="panel-heading" style="background-color: #ecc757">
+						<div class="row" >
+							<div class="col-md-3">
+								<h3 class="closed_home_heading_digit">89</h3>
+
+							</div>
+							<div class="col-md-9">
+								<p class="closed_home_heading">Total
+									Open</p>
+								<p class="closed_home_heading">Tickets</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="panel-body" style="background-color: #F9E8BA">
+						<div class="row" style="border-bottom: 1px solid #ecc757;height:60px;"> 
+							<div class="col-md-9 total-open-cls" style="height:100%;line-height:60px;">Self Help
+							</div>
+							<div class="col-md-3" style="height:100%;line-height:60px;">
+								<label class="total_open_digits">30</label>
+							</div>
+						</div>
+						<div class="row" style="border-bottom: 1px solid #ecc757;height:60px;">
+							<div class="col-md-9 total-open-cls">Smart<br>Workbench
+							</div>
+							<div class="col-md-3" style="height:100%;line-height:60px;"> 
+                                <label class="total_open_digits">27</label>
+							</div>
+						</div>
+						<div class="row" style="height:60px;">
+							<div class="col-md-9" style="height:100%;line-height:60px;">
+								<p class="total-open-cls">Deep Analysis</p>
+							</div>
+							<div class="col-md-3" style="height:100%;line-height:60px;">
+								<label class="total_open_digits">32</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class=col-md-3>
+				<div class="panel panel-default" style="border: 8px solid; border-color: #e3fbd8;border-radius:0 !important;">
+					<div class="panel-heading" style="background-color: #e3fbd8;">
+						<div class="row">
+							<div class="col-lg-12 col-md-12">                                
+								<h5 style="color: #8ba67e;padding-left:6px;"><b><i class="fa fa-search" aria-hidden="true" style="color:#8ba67e;"></i>&nbsp;&nbsp;Recent Searched Issues</b></h5>
+							</div>
+						</div>
+					</div>
+					<div class="incident_home_scroll">
+						<div class="row recent_search_cls">
+							<p style="color: #3a3a3a">
+								<b>Users with 'edit page content'</b>
+							</p>
+							<p style="color: #3a3a3a">
+								<b>access cannot edit simple pages.</b>
+							</p>
+							<p>Type - Publishing</p>
+							<p>Issue for drupal plugin on investor page</p>
+							<p>thus unable to add and update.</p>
+							<p>Created by - Digital/E103432</p>
+						</div>
+						<div class="row recent_search_cls">
+							<p style="color: #3a3a3a">
+								<b>My theme (CSS/template) changes</b>
+							</p>
+							<p style="color: #3a3a3a">
+								<b>aren't showing up</b>
+							</p>
+							<p>Type - Publishing</p>
+							<p>Ticket No - WEB09265</p>
+							<p>Issue for drupal plugin on investor page</p>
+							<p>thus unable to add and update.</p>
+							<p>Created by - Digital/E103432</p>
+						</div>
+						<div class="row recent_search3_cls">
+							<p style="color: #3a3a3a">
+								<b>User not able to "see" content</b>
+							</p>
+							<p style="color: #3a3a3a">
+								<b>after Creating /editingpages. </b>
+							</p>
+							<p>Type - Publishing</p>
+							<p>Ticket No - WEB09265</p>
+							<p>Issue for drupal plugin on investor page</p>
+							<p>thus unable to add and update.</p>
+							<p>Created by - Digital/E103432</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class=col-md-3>				
+				<div class="row">
+					<div class="panel panel-default" style="border: 10px solid; border-color: #f7eee1;border-radius:0 !important;">
+						<div class="panel-heading" style="background-color: #f7eee1;">
+							<div class="row">
+								<div class="col-lg-12 col-md-12">
+                                    <h5 style="color: #ac9067;padding-left:6px;"><b><i class="fa fa-search" aria-hidden="true" style="color:#ac9067;"></i>&nbsp;&nbsp;Recent Searched Ticket</b></h5>									
+								</div>
+							</div>
+						</div>
+						<div class="incident_home_scroll">
+							<div class="row panel-row-cls">
+								<p style="color: #b51c1c;">0024</p>
+								<p>
+									<b>Investor</b> - PROD
+								</p>
+								<p>Issue for drupal plugin on investor</p>
+								<p>page unable to add and update.....</p>
+								<p>
+									<b>Created by</b> - Digital/E103432
+								</p>
+								<p>
+									<b>Priority</b> <label class="low-cls">Low</label>
+								</p>
+								<p>
+									<b>SLA Resolution</b> <label class="gold-cls">Gold</label>
+								</p>
+								<p>Type - Website</p>
+							</div>
+							<div class="row panel-row2-cls">
+								<p style="color: #b51c1c;">6595</p>
+								<p>
+									<b>Investor</b> - PROD
+								</p>
+								<p>Issue for drupal plugin on investor</p>
+								<p>page unable to add and update.....</p>
+								<p>Type - Website</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+</div>
+
+	 
+
+	 </script>
+		<nav class="navbar navbar-default  navbar-fixed-bottom footer-cls ">
+			<div class="row" style="text-align: center; margin-top: 10px;">All
+				Contents @Copyright L&T Infotech,Inc 1997-2016.All
+				Rights Reserved.</div>
+				
+			<div class="row footer-version"><i>v4.212 | Voice Text</i></div>	
+		</nav>
+	
+    <script>
+        $(function () {
+            $('.incident_home_scroll').slimScroll({
+                height: '400px'
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
