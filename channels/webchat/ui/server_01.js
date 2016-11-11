@@ -29,7 +29,7 @@ class UIServer
 		}
 		else //sharedProperties.get('appServer.uiSocketPort')
 		{
-			fs.readFile('./index.html', function (err, html) {
+			fs.readFile('./demo-template-voice.html', function (err, html) {
   			  if (err) {
        				 throw err; 
  				   }       
