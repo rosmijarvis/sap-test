@@ -5,7 +5,7 @@ var express = require('express');
 var app = express();
 var https = require('https');
 var fs = require('fs');
-var sharedProperties = PropertiesReader("../webroot/channels/webchat/config/shared-properties.js");
+var sharedProperties = PropertiesReader("../wwwroot/channels/webchat/config/shared-properties.js");
 
 
 class UIServer
@@ -18,8 +18,8 @@ class UIServer
 		{
 			let webAppsPort=sharedProperties.get('appServer.uiSocketPort');
 			let httpsServer = https.createServer({
-			key: fs.readFileSync('../webroot/channels/webchat/certs/key.pem'),
-			cert: fs.readFileSync('../webroot/channels/webchat/certs/cert.pem')
+			key: fs.readFileSync('../wwwroot/channels/webchat/certs/key.pem'),
+			cert: fs.readFileSync('../wwwroot/channels/webchat/certs/cert.pem')
 			},app).listen(webAppsPort);
 			
 			var host = httpsServer.address().address
