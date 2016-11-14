@@ -33,7 +33,7 @@ class UIServer
   			//  if (err) {
        			//	 throw err; 
  			//	   }       
-			var server = app.listen( process.env.port || 8080, function () {
+			var server = app.listen( process.env.port || 8082, function () {
 			var host = server.address().address
 			var port = server.address().port
 			//res.write(html);  
